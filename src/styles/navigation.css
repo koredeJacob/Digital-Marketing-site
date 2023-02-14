@@ -1,0 +1,198 @@
+.navigation-small{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbody{
+    width:100%;
+    height: 80px;
+    padding: 11px 15px;
+    padding-bottom: 0px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:40%;
+}
+
+.logo-image{
+    width: 94%;
+}
+
+.menu-button{
+    width: 5%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    padding:17px 15px;
+    padding-bottom: 12px;
+    background-color: #5956e8;
+    border-radius: 10px;
+}
+
+.first-line,.second-line,.third-line{
+    width: 100%;
+    height: 3px;
+    background-color: #f6f6f6;
+}
+
+.menu{
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.get-started-button {
+    width: 100px;
+    padding: 17px 20px 17px;
+    font-weight: 600;
+    background-color: #292930;
+    color: white;
+    border-radius: 7px;
+}
+
+.menu-large {
+    display: none;
+}
+
+.open{
+    overflow: hidden;
+    animation: opencontainer;
+    animation-duration: 0.5s;
+}
+
+@keyframes opencontainer {
+    0%{max-height: 0px;}
+    100%{max-height: 500px;}
+}
+
+.open a,.open div{
+    text-decoration: none;
+    color: #292930;
+    animation-name: opendropdown;
+    animation-duration: 0.5s;
+}
+
+.open div{
+    color:white;
+}
+
+@keyframes opendropdown {
+    0%{transform: translateY(-220px);}
+    100%{transform: translateY(0);}
+}
+
+.close {
+    overflow: hidden;
+    animation: closecontainer;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes closecontainer {
+    0% {
+        max-height: 500px;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        max-height: 0px;
+        opacity: 0;
+    }
+}
+
+.close a,.close div {
+    animation-name: closedropdown;
+    color: #292930;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.close div{
+    color: white;
+}
+
+@keyframes closedropdown {
+    0% {
+        text-decoration: none;
+        transform: translateY(0);
+    }
+    100% {
+        
+        transform: translateY(-295px);
+    }
+}
+
+@media (min-width:470px) {
+    .menu-button {
+        padding: 24px 14px;
+        padding-bottom: 22px;
+    }
+    .first-line,.second-line,.third-line{
+        width: 70%;
+        height: 4px;
+        gap: 4px;
+    }
+    .navbody{
+        height: 81px;
+    }
+    .logo,.logo-image{
+        height: 100%;
+        width: 50%;
+    }
+}
+
+@media (min-width:769px) {
+    .navigation-small {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .get-started-button{
+        width: 12%;
+    }
+    .menu-large{
+        display: flex;
+        width:40%;
+        gap:26px;
+        margin-left: 150px;
+        align-items: center;
+    }
+    .menu-button,.menu{
+        display: none;
+    }
+    .navbody{
+        width: 25%;
+        height: 81px;
+    }
+    .logo,.logo-image{
+        width: 100%;
+        height: 100%;
+    }
+
+@media (min-width:1024px) {
+    .navbody{
+        width: 239px;
+        height: 81px;
+    }
+    .logo{
+        height: 100%;
+    }
+}
+}
