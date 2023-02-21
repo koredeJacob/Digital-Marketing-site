@@ -84,6 +84,11 @@
 a{
     text-decoration: none;
     color: #292930;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: #5956e8;
 }
 
 .open {
@@ -181,6 +186,7 @@ a{
         height: 81px;
         margin: 0px;
     }
+
     .logo{
         width: 100%;
         height: 100%;
@@ -193,7 +199,7 @@ a{
     }
 }
 
-@media (min-width:2560px) {
+@media (min-width:1800px) {
     .navigation-small {
         width: 50%;
     }

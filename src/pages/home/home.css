@@ -6,13 +6,17 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
 .banner{
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 92%;
+    margin: auto;
     color: #292930;
     z-index: 2;
 }
+
 .banner-circle{
     position: absolute;
     top:-58px;
@@ -31,11 +35,12 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    padding: 60px 5%;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     gap:21px;
 }
+
 .agency-text{
     font-family: 'Noto Sans';
     font-size: 15px;
@@ -59,7 +64,6 @@
 .banner-buttons{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap:20px;
 }
 
@@ -71,6 +75,8 @@
     padding-bottom: 18px;
     border: 1.5px solid #292930;
     border-radius: 7px;
+    text-align: center;
+    transition: all 0.3s;
 }
 
 .banner-getstarted:hover {
@@ -90,11 +96,14 @@
 
 .banner-image{
     position: relative;
+    width: 92%;
+    margin: auto;
+    padding-top: 25px;
 }
 
 .monitor{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -110,6 +119,105 @@
     position: absolute;
     width: 15%;
     height: auto;
-    bottom: 5px;
+    bottom: 7px;
     right: 30px;
+}
+
+.star{
+    position: absolute;
+    top:19%;
+    right:3px;
+}
+
+@media (min-width:460px){
+    .banner-content{
+        text-align:left;
+    }
+    .banner-buttons{
+        flex-direction: row;
+    }
+    .banner-getstarted,.banner-services{
+        width: 20%;
+    }
+    .banner-image{
+        width: 80%;
+    }
+    .monitor{
+        width:100%;
+    }
+}
+
+@media (min-width:990px){
+    .hero{
+        padding-bottom: 85px;
+    }
+    .banner{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .banner-content{
+        width: 40%;
+        padding-right: 0;
+        padding-top: 100px;
+    }
+    .banner-image{
+        width: 50%;
+        margin: 0;
+    }
+    .banner-circle{
+        width: 850px;
+        height: 850px;
+        right: -390px;
+        top:-120px;
+        background-position: 27% 82%;
+    }
+    .banner-getstarted,.banner-services {
+            width: 35%;
+    }
+}
+
+@media (min-width:1440px){
+    .banner-circle{
+        width: 810px;
+        height: 810px;
+        right: -300px;
+    }
+    .banner-text{
+        font-size: 45px;
+    }
+}
+
+@media(min-width:1800px){
+    .banner{
+        width: 75%;
+        justify-content: space-around;
+        margin: 0;
+        margin-left: 20%;
+
+    }
+    .banner-content{
+        width:38%;
+        padding-top:120px;
+    }
+    .banner-image{
+        width: 38%;
+    }
+    .banner-text{
+        font-size: 55px;
+    }
+    .agency-text{
+        font-size: 18px;
+    }
+    .dummy-text{
+        font-size: 20px;
+    }   
+}
+
+@media (min-width:2000px){
+    .banner-circle{
+        width: 950px;
+        width: 950px;
+        top:-64px;
+        right:-250px;
+    }
 }

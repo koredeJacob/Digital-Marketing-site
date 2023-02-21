@@ -5,7 +5,7 @@ import Nav from "../../components/navigation/navigation"
 import monitor from "../../assets/pattern (3).png"
 import check from "../../assets/pattern (1).png"
 import bullseye from "../../assets/pattern.png"
-
+import star from "../../assets/star.png"
 import "./home.css"
 
 function Home(){
@@ -33,6 +33,7 @@ function Home(){
                         <img src={monitor} className="monitor" alt="monitor photo"/>
                         <img src={check} className="check" alt="check mark"/>
                         <img src={bullseye} className="bullseye" alt="bullseye"/>
+                        <img src={star} className="star" alt="star"/>
                     </div>
                 </div>
                 <div className="banner-circle"></div>
