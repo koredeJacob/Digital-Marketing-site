@@ -38,6 +38,9 @@ function Home(){
                 </div>
                 <div className="banner-circle"></div>
             </div>
+            <div className="home-services">
+                <ServicesContainer/>
+            </div>
         </div>
     )
 }
