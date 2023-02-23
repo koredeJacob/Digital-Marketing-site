@@ -129,6 +129,23 @@
     right:3px;
 }
 
+.home-services{
+    background: #292930;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services-heading{
+    margin-bottom: 40px;
+}
+
+.services-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
 @media (min-width:480px){
     .banner-content{
         text-align:left;
