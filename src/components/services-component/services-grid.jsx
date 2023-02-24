@@ -16,7 +16,7 @@ const ServicesGrid=({image,sub,text})=>{
                     <p className="card-text">{text}</p>
                 </div>
                 <Link to="#" className="card-button" onMouseEnter={()=>sethover(!hover)} onMouseLeave={()=>sethover(!hover)}>
-                    <div>Read More</div>
+                    <div>View Services</div>
                     <img src={hover?blue:grey}/>
                 </Link>    
         </div>

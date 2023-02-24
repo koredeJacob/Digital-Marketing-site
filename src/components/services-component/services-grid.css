@@ -1,6 +1,4 @@
 .services-card{
-    width:80%;
-    margin: auto;
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     display: flex;
     flex-direction: column;
@@ -16,13 +14,13 @@
     justify-content: center;
     align-items: center;
     background: #292930;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 100%;
 }
 
 .card-image{
-    width:50px;
+    width:55px;
     height: auto;
 }
 
@@ -58,5 +56,40 @@
     .services-card{
         text-align: left;
         align-items: start;
+        padding: 35px;
+    }
+    .card-image-circle{
+        width: 120px;
+        height: 120px;
+    }
+    .card-image{
+        width: 60px;
+    }
+    .card-sub{
+        font-size: 24px;
+    }
+    .card-text{
+        font-size: 19px;
+    }
+    .card-button{
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+@media (min-width:1440px){
+    .services-card{
+        gap:12px;
+    }
+    .card-image-circle{
+        width: 150px;
+        height: 150px;
+    }
+    .card-image{
+        width: 65px;
+    }
+    .card-button{
+        gap:8px;
     }
 }
