@@ -53,18 +53,16 @@ function Home(){
                     <div className="services-title">
                         <img src={settings} loading='lazy'/>
                         <div className="title">
-                            <p className="title-sub"><span>// </span>01. SERVICES</p>
+                            <p className="title-sub"> <span>/ / </span> 01 . SERVICES</p>
                             <h2 className="title-text">High-impact digital services to take your business to the next level</h2>
                         </div>
-                        <div>
-                            <Link to="#"> 
-                                <div>Read More</div>
-                                <img src={blue}/>
-                            </Link>
-                        </div>
+                        <Link to="#" className="services-button"> 
+                            <div>Our Services</div>
+                            <img src={blue}/>
+                        </Link>           
                     </div>
-
                 </div>
+                
                 <div className="services-content">
                     <ServicesGrid image={mobilephone} sub='Social Media Marketing' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
                     <ServicesGrid image={Megaphone} sub='Paid Advertising' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
