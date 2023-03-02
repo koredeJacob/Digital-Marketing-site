@@ -67,19 +67,19 @@ function Home(){
                     </p>
                     <div className="about-point">
                         <div className="points">
-                            <img src={abouticon2 }/>
+                            <img src={abouticon}/>
+                            <div className="linebreaker"/>
                             <div className="point-container">
                                 <h3 className="point-header">Guaranteed Results</h3>
-                                <div className="linebreaker"/>
                                 <p className="point-text">Lorem ipsum dolor, sit amet consectetur 
                                 adipisicing elit. Et eveniet nihil non? Adipisci provident debitis dicta illo.</p>
                             </div>
                         </div>
-                        <div className="points" style={{marginTop:'25px'}}>    
-                            <img src={abouticon}/>
+                        <div className="points second">    
+                            <img src={abouticon2}/>
+                            <div className="linebreaker"/>
                             <div className="point-container">
                                 <h3 className="point-header">Team Of Industry Experts</h3>
-                                <div className="linebreaker"/>
                                 <p className="point-text">Lorem ipsum dolor, sit amet consectetur 
                                 adipisicing elit. Et eveniet nihil non? Adipisci provident debitis dicta illo.</p>
                             </div>

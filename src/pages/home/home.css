@@ -146,9 +146,11 @@
 }
 
 .about-container{
+    position: relative;
     width: 94%;
     margin: auto;
     margin-top: -50px;
+    overflow: hidden;
 }
 
 .about-sub{
@@ -182,7 +184,6 @@
     font-size: 18px;
     color: #555555;
 }
-
 .about-point{
     margin-top: 45px;
 }
@@ -191,19 +192,20 @@
     height: 100px;
     border-radius: 100%;
 }
-
 .point-header{
     color: #292930;
     font-weight: 600;
     font-size: 22px;
     line-height: 110.5%;
 }
-
 .point-text{
     font-family: "Noto Sans";
     font-size: 18px;
     line-height: 156.5%;
     color: #555;
+}
+.second{
+    margin-top: 25px;
 }
 
 @media (min-width:480px){
@@ -234,11 +236,28 @@
         align-items: center;
     }
     .points img{
+        z-index: 1;
         height:100px;
         width: auto;
     }
     .point-container{
+        position: relative;
+        height: 180px;
         width: 70%;
+    }
+    .linebreaker{
+        position:absolute;
+        width: 100%;
+        border:1px solid #cfcfcf;
+    }
+    .point-header,.point-text{
+        position: absolute;
+    }
+    .point-text{
+        top:75px;
+    }
+    .second{
+        margin-top: 50px;
     }
 }
 
@@ -269,6 +288,47 @@
     .banner-getstarted,.banner-services {
             width: 35%;
     }
+    .about-container{
+        width: 70%;
+    }
+    .about-title h2{
+        font-size: 38px;
+    }
+    .about-point{
+        width: 85%;
+        margin: auto;
+    }
+    .about-image{
+        width: 120%;
+    }
+    .about-text,.point-text{
+        font-size: 19px;
+    }
+}
+
+@media (min-width:1260px){
+    .home-about{
+        width:80%;
+        flex-direction: row;
+        margin: auto;
+        max-width: 1440px;
+        margin-top: 60px;
+    }
+    .about-image-container,.about-container{
+        width: 50%;
+    }
+    .about-image{
+        width: 124%;
+    }
+    .about-sub{
+        flex-direction: row;
+        gap:22px;
+        align-items:flex-start;
+        margin-top:90px;
+    }
+    .about-text{
+        text-align: justify;
+    }
 }
 
 @media (min-width:1440px){
@@ -279,6 +339,9 @@
     }
     .banner-text{
         font-size: 45px;
+    }
+    .about-point{
+        width: 80%;
     }
 }
 
