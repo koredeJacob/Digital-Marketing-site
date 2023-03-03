@@ -253,6 +253,9 @@
     .point-header,.point-text{
         position: absolute;
     }
+    .point-header{
+        top:25px;
+    }
     .point-text{
         top:75px;
     }
@@ -308,7 +311,7 @@
 
 @media (min-width:1260px){
     .home-about{
-        width:80%;
+        width:86%;
         flex-direction: row;
         margin: auto;
         max-width: 1440px;
@@ -318,16 +321,19 @@
         width: 50%;
     }
     .about-image{
-        width: 124%;
+        width: 128.5%;
     }
     .about-sub{
         flex-direction: row;
         gap:22px;
         align-items:flex-start;
-        margin-top:90px;
+        margin-top:85px;
     }
     .about-text{
         text-align: justify;
+    }
+    .about-image-container{
+        margin-top: 25px;
     }
 }
 
