@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { easeIn, motion } from "framer-motion";
 
 import "./services-container.css"
 import mobilephone from "../../assets/services-images/mobilephone.png"
@@ -16,7 +17,11 @@ const ServicesContainer = ()=>{
     return (
         <div className="home-services">
             <div className="wrapper">
-                <div className="services-heading">
+                <motion.div className="services-heading" 
+                    initial={{opacity:0,x:"-20%"}} 
+                    whileInView={{opacity:1,x:0}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
                     <div className="services-title">
                         <div className="info-div">
                             <img src={settings} loading='lazy'/>
@@ -30,7 +35,7 @@ const ServicesContainer = ()=>{
                             <img src={blue}/>
                         </Link>           
                     </div>
-                </div>
+                </motion.div>
                 
                 <div className="services-content">
                     <ServicesGrid image={mobilephone} sub='Social Media Marketing' text='Lorem ipsum dolor sit dilimi amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
