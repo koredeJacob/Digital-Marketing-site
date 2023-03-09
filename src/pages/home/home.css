@@ -225,8 +225,13 @@
     color: #292930;
 }
 
-.process-header,.illustrations{
+.process-header{
     width:90%;
+    margin: auto;
+}
+
+.illustrations{
+    width: 90%;
     margin: auto;
 }
 
@@ -277,6 +282,63 @@
     font-weight: 400;
     letter-spacing: 0.34px;
     line-height: 152%;
+}
+
+.home-project{
+    background-color: #292930;
+    margin:40px 0;
+    padding: 60px 0;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    gap:27px
+}
+
+.keyboard-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    height:fit-content;
+    background: linear-gradient(316.69deg, #FFDA57 -11.19%, #FFDA57 20.41%, #5956E8 71.73%, #5956E8 110.15%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.keyboard-background img{
+    width: 88%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.25);
+}
+
+.project-footer{
+    display: grid;
+    grid-template-columns: 90%;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #5d5d63;
+}
+
+.project-stat{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    color: white;
+}
+
+.client-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.client-content{
+    color: #D0D0D0;
+    font-family: 'Noto Sans';
+    letter-spacing: 0.135em;
 }
 
 @media (min-width:480px){
@@ -336,6 +398,9 @@
     .process-header{
         width:85%;
     }
+    .project-stat{
+        justify-content: center;
+    }
 }
 
 @media (min-width:768px){
@@ -358,6 +423,13 @@
     }
     .reverse{
         flex-direction: row-reverse;
+    }
+    .keyboard-background{
+        padding: 30px 0;
+    }
+    .project-footer{
+        grid-template-columns: 45% 45%;
+        justify-content: space-between;
     }
 }
 
@@ -407,6 +479,9 @@
     .process-header {
         width: 60%;
     }
+    .keyboard-background{
+        width: 60%;
+    }
 }
 
 @media (min-width:1260px){
@@ -453,6 +528,29 @@
     .illustration-text p{
         font-size: 19px;
     }
+    .project-content{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .keyboard-background{
+        width: 45%;
+        padding: 42px 0; 
+    }
+    .keyboard-background img{
+        width: 80%;
+    } 
+    .project-stat div{
+        width: 59%;
+    }
+    .project-footer {
+        grid-template-columns: 22% 22% 22% 22%; 
+        justify-content: space-evenly; 
+    }
+    .client-title{
+        font-size: 28px;
+    }
+
 }
 
 @media (min-width:1440px){

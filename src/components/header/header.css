@@ -1,0 +1,43 @@
+.process-header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.process-info {
+    text-align: center;
+}
+
+.process-info h2 {
+    font-size: 30px;
+}
+
+.process-text {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    letter-spacing: 0.135em;
+}
+
+@media (min-width:480px){
+    .process-header {
+        width: 85%;
+    }
+}
+
+@media (min-width:990px){
+    .process-header {
+        width: 60%;
+    }
+}
+
+@media (min-width:1260px){
+    .process-header {
+        width: 50%;
+    }
+    .process-info h2 {
+        font-size: 37px;
+    }
+}

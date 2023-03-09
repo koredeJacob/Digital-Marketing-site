@@ -15,16 +15,29 @@ import ladder from "../../assets/ladder.png"
 import charts from "../../assets/charts.png"
 import graphics from "../../assets/graphics.png"
 import notification from "../../assets/notification.png"
-
+import redicon from "../../assets/red icon.png"
+import keyboard from "../../assets/keyboard.jpg"
+import ServicesContainer from "../../components/services-component/services-container";
+import { ServicesHeading } from "../../components/services-component/services-container";
+import Header from "../../components/header/header";
+import Accordion from "../../components/accordion/accordion";
 import "./home.css"
 
 
-import ServicesContainer from "../../components/services-component/services-container";
+const Accordionitems=[{header:"Online Media Management",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
+    laborum facilis hic alias dolorum repellendus\
+    obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"},
+    {header:"Experential Marketing",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
+    laborum facilis hic alias dolorum repellendus\
+    obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"},
+    {header:"Email Marketing",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
+    laborum facilis hic alias dolorum repellendus\
+    obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"}]
 
 function Home(){
     return(
         <div>
-            <div className="hero">
+            <header className="hero">
                 <Nav/>
 
                 <div className="banner">
@@ -61,7 +74,7 @@ function Home(){
                     </div>
                 </div>
                 <div className="banner-circle"></div>
-            </div>
+            </header>
 
             <ServicesContainer/>
 
@@ -128,17 +141,7 @@ function Home(){
             </div>
 
             <div className="home-process">
-                <div className="process-header">
-                    <img src={ladder} loading="lazy"/>
-                    <div className="process-info">
-                        <p className="process-text">
-                            <span style={{color:'#5956e8'}}>// </span>
-                            O3. PROCESS
-                        </p>
-                        <h2>A simple, yet powerful and efficient digital process</h2>
-                    </div>
-                </div>
-
+                <Header spantext=" O3. PROCESS" image={ladder} content="A simple, yet powerful and efficient digital process"/>
                 <div className="illustrations">
                     <div className="illustration-content">
                         <img src={charts}/>
@@ -162,6 +165,45 @@ function Home(){
                             <h4>Growth & Scale</h4>
                             <p>Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Eaque blanditiis atque quasi explicabo?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="home-project">
+                <div className="wrapper">
+                    <ServicesHeading titletext="Browse our latest case study on Marketing Agency"
+                    buttontext="Case studies" spantext="05. CASE STUDIES" image={redicon}/>
+                    <div className="project-content">
+                        <Accordion items={Accordionitems}/>
+                        <div className="keyboard-background">
+                            <img src={keyboard} loading="lazy"/>
+                        </div>
+                    </div>
+                    <div className="project-footer">
+                        <div className="project-stat">
+                            <h4 className="client-title">325 <span style={{color:"blue"}}>+</span></h4>
+                            <div>
+                                <p className="client-content">CLIENTS WORLDWIDE</p>
+                            </div>
+                        </div>
+                        <div className="project-stat">
+                            <h4 className="client-title">975 <span style={{color:"red"}}>+</span></h4>
+                            <div>
+                                <p className="client-content">PROJECTS COMPLETED</p>
+                            </div>
+                        </div>
+                        <div className="project-stat">
+                            <h4 className="client-title">70 <span style={{color:" #FFDC60"}}>+</span></h4>
+                            <div>
+                                <p className="client-content">TEAM MEMBERS</p>
+                            </div>
+                        </div>
+                        <div className="project-stat">
+                            <h4 className="client-title">85m <span style={{color:"#38E65E"}}>+</span></h4>
+                            <div>
+                                <p className="client-content">REVENUE GENERATED</p>
+                            </div>
                         </div>
                     </div>
                 </div>

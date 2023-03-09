@@ -17,26 +17,8 @@ const ServicesContainer = ()=>{
     return (
         <div className="home-services">
             <div className="wrapper">
-                <motion.div className="services-heading" 
-                    initial={{opacity:0,x:"-20%"}} 
-                    whileInView={{opacity:1,x:0}}
-                    viewport={{once:true}}
-                    transition={{duration:0.7,ease:"easeOut"}}>
-                    <div className="services-title">
-                        <div className="info-div">
-                            <img src={settings} loading='lazy'/>
-                            <div className="title">
-                                <p className="title-sub"> <span>/ / </span> 01 . SERVICES</p>
-                                <h2 className="title-text">High-impact digital services to take your business to the next level</h2>
-                            </div>
-                        </div>
-                        <Link to="#" className="services-button"> 
-                            <div>Our Services</div>
-                            <img src={blue}/>
-                        </Link>           
-                    </div>
-                </motion.div>
-                
+                <ServicesHeading titletext="High-impact digital services to take your business to the next level" spantext="01 . SERVICES"
+                image={settings} buttontext="Our Services"/>
                 <div className="services-content">
                     <ServicesGrid image={mobilephone} sub='Social Media Marketing' text='Lorem ipsum dolor sit dilimi amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
                     <ServicesGrid image={Megaphone} sub='Paid Advertising' text='Lorem ipsum dolor sit dilimi amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
@@ -49,6 +31,28 @@ const ServicesContainer = ()=>{
         </div>
     )
 
+}
+
+export const ServicesHeading=({titletext, image,buttontext,spantext})=>{
+    return (<motion.div className="services-heading" 
+                    initial={{opacity:0,x:"-20%"}} 
+                    whileInView={{opacity:1,x:0}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
+                    <div className="services-title">
+                        <div className="info-div">
+                            <img src={image} loading='lazy'/>
+                            <div className="title">
+                                <p className="title-sub"> <span>/ / </span> {spantext}</p>
+                                <h2 className="title-text">{titletext}</h2>
+                            </div>
+                        </div>
+                        <Link to="#" className="services-button"> 
+                            <div>{buttontext}</div>
+                            <img src={blue}/>
+                        </Link>           
+                    </div>
+                </motion.div>)
 }
 
 export default ServicesContainer
