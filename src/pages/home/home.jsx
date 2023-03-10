@@ -18,21 +18,48 @@ import notification from "../../assets/notification.png"
 import redicon from "../../assets/red icon.png"
 import keyboard from "../../assets/keyboard.jpg"
 import ServicesContainer from "../../components/services-component/services-container";
+import dollars from "../../assets/dollars.png"
+import coin from "../../assets/coin.png"
+import settings from "../../assets/settings.png"
+import startup from "../../assets/services-images/Startup.png"
 import { ServicesHeading } from "../../components/services-component/services-container";
 import Header from "../../components/header/header";
 import Accordion from "../../components/accordion/accordion";
+import Pricing from "../../components/pricing/pricingcomponet";
 import "./home.css"
 
 
-const Accordionitems=[{header:"Online Media Management",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
+const Accordionitems=[
+    {header:"Online Media Management",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
     laborum facilis hic alias dolorum repellendus\
     obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"},
+
     {header:"Experential Marketing",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
     laborum facilis hic alias dolorum repellendus\
     obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"},
+
     {header:"Email Marketing",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae\
     laborum facilis hic alias dolorum repellendus\
     obcaecati dolorem eligendi, saepe fugit, mollitia perspiciatis sit culpa?"}]
+
+const pricingitems=[{plan:"Starter", image:settings,price:"29",pricing_content:[{description:"Email Marketing content",selected:true},
+                     {description:"Marketing Voice",selected:true},
+                     {description:"Optimize SEO",selected:true},
+                     {description:"Consulting Video",selected:false},
+                     {description:"Marketing Advertising",selected:false}]},
+
+                     {plan:"Enterprise", image:startup,price:"66",pricing_content:[{description:"Email Marketing content",selected:true},
+                     {description:"Marketing Voice",selected:true},
+                     {description:"Optimize SEO",selected:true},
+                     {description:"Consulting Video",selected:true},
+                     {description:"Marketing Advertising",selected:false}]},
+
+                     {plan:"Professional", image:coin,price:"89",pricing_content:[{description:"Email Marketing content",selected:true},
+                     {description:"Marketing Voice",selected:true},
+                     {description:"Optimize SEO",selected:true},
+                     {description:"Consulting Video",selected:true},
+                     {description:"Marketing Advertising",selected:true}]}
+]
 
 function Home(){
     return(
@@ -206,6 +233,15 @@ function Home(){
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+            <div className="home-pricing">
+                <Header image={dollars} spantext="06 . PRICE & PLAN" content="Our Flexible Pricing Plans"/>
+                <div className="pricing-container">
+                    {pricingitems.map((pricingitem,i)=>{
+                        return <Pricing key={i} index={i} items={pricingitem}/>
+                    })}
                 </div>
             </div>
         </div>
