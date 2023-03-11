@@ -25,7 +25,7 @@ const Pricing=({items, index})=>{
                     </div>)
             })}</div>
             <div>
-                <Link to="#" style={index===1?{backgroundColor:"#f6f6f6", color:"#292930"}:{backgroundColor:"#292930", color:"#fff"}} className={`pricing-button ${index===1?"popular":"notpopular"}`} >Purchase Plan</Link>
+                <Link to="#" className={`pricing-button ${index===1?"popular":"unpopular"}`} >Purchase Plan</Link>
             </div>
         </div>
     )

@@ -324,6 +324,10 @@
     margin: auto;
 }
 
+.home-article{
+    margin-top: 50px;
+}
+
 @media (min-width:480px){
     .banner-content{
         text-align:left;

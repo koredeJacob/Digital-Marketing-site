@@ -17,15 +17,19 @@ import graphics from "../../assets/graphics.png"
 import notification from "../../assets/notification.png"
 import redicon from "../../assets/red icon.png"
 import keyboard from "../../assets/keyboard.jpg"
-import ServicesContainer from "../../components/services-component/services-container";
+import ServicesContainer from "../../components/services-component/services-container"
 import dollars from "../../assets/dollars.png"
 import coin from "../../assets/coin.png"
 import settings from "../../assets/settings.png"
 import startup from "../../assets/services-images/Startup.png"
-import { ServicesHeading } from "../../components/services-component/services-container";
-import Header from "../../components/header/header";
-import Accordion from "../../components/accordion/accordion";
-import Pricing from "../../components/pricing/pricingcomponet";
+import greencircle from "../../assets/greencircle.png"
+import increasetraffic from "../../assets/increase traffic.png"
+import smallbusinesses from "../../assets/small businesses.png"
+import { ServicesHeading } from "../../components/services-component/services-container"
+import Header from "../../components/header/header"
+import Accordion from "../../components/accordion/accordion"
+import Pricing from "../../components/pricing/pricingcomponet"
+import Article from "../../components/article/article"
 import "./home.css"
 
 
@@ -243,6 +247,14 @@ function Home(){
                         return <Pricing key={i} index={i} items={pricingitem}/>
                     })}
                 </div>
+            </div>
+
+            <div className="home-article">
+                <Header image={greencircle} spantext="08 . Articles" content="Browse Our Content on Growth Marketing"/>
+                <Article image={smallbusinesses} title="The Best 4 Types Of Business Strategies For Small Business" 
+                    date="MARCH 10, 2023" background="#FFF3CA" reverse={false}/>
+                <Article image={increasetraffic} title="Learn How To Increase Traffic To Your Website Organically"
+                    date="MARCH 11, 2023" background="#E9F7FF" reverse={true}/>
             </div>
         </div>
     )

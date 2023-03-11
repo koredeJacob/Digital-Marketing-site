@@ -4,7 +4,7 @@ import "./header.css"
 const Header=({image,spantext,content})=>{
      return (
         <div className="process-header">
-            <img src={image} loading="lazy"/>
+            <img src={image} loading="lazy" alt="header icon"/>
             <div className="process-info">
                 <p className="process-text">
                     <span style={{color:'#5956e8'}}>// </span>
