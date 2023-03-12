@@ -25,6 +25,7 @@ import startup from "../../assets/services-images/Startup.png"
 import greencircle from "../../assets/greencircle.png"
 import increasetraffic from "../../assets/increase traffic.png"
 import smallbusinesses from "../../assets/small businesses.png"
+import morearticles from "../../assets/more articles.png"
 import { ServicesHeading } from "../../components/services-component/services-container"
 import Header from "../../components/header/header"
 import Accordion from "../../components/accordion/accordion"
@@ -255,6 +256,10 @@ function Home(){
                     date="MARCH 10, 2023" background="#FFF3CA" reverse={false}/>
                 <Article image={increasetraffic} title="Learn How To Increase Traffic To Your Website Organically"
                     date="MARCH 11, 2023" background="#E9F7FF" reverse={true}/>
+                <div className="more-articles">
+                    <Link to="#">More Articles</Link>
+                    <img src={morearticles}/>
+                </div>
             </div>
         </div>
     )
