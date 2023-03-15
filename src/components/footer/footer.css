@@ -1,0 +1,67 @@
+.footer-container{
+    background-color:#292930;
+    margin-top: 75px;
+}
+
+.subscribe-box{
+    box-sizing: border-box;
+    width:90%;
+    border-radius: 7px;
+    margin: auto;
+    background-color:#3C3C45;
+    padding: 20px 15px;
+}
+
+.footer-logo img{
+    height: 60px;
+    width: auto;
+}
+
+.footer-megaphone img{
+    height: 145px;
+    width: auto;
+}
+
+.subscribenow h3{
+    color:white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.subscribenow p{
+    font-family: "Noto Sans";
+    color: #D0D0D0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.text-input{
+    background-color: #5B5B61;
+    color: white;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 20px 0;
+    padding-left: 20px;
+    border: 0px;
+}
+
+.form-button{
+    font-size: 18px;
+    padding:20px 0;
+    border-radius: 7px;
+    background-color: #FFDC60;
+}
+
+.footer-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}

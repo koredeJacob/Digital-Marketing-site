@@ -32,6 +32,7 @@ import Accordion from "../../components/accordion/accordion"
 import Pricing from "../../components/pricing/pricingcomponet"
 import Article from "../../components/article/article"
 import "./home.css"
+import Footer from "../../components/footer/footer";
 
 
 const Accordionitems=[
@@ -261,6 +262,7 @@ function Home(){
                     <img src={morearticles}/>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
