@@ -3,6 +3,12 @@ import { Link } from "react-router-dom"
 
 import logo from "../../assets/logo white.png"
 import megaphone from "../../assets/megaphonefooter.png"
+import utilities from "../../assets/utilities.png"
+import phone from "../../assets/phone.png"
+import location from "../../assets/location.png"
+import follows from "../../assets/follows.png"
+import pages from "../../assets/pages.png"
+
 import "./footer.css"
 
 const Footer=()=>{
@@ -30,15 +36,15 @@ const Footer=()=>{
                 <div className="contact-info">
                     <div className="phone">
                         <div className="phone-header">
-                            <img/>
+                            <img src={phone} alt="phone"/>
                             <h3>Get in touch with us</h3>
                         </div>
-                        <Link className="umber">+1 123 456 789</Link>
+                        <Link className="number">+1 123 456 789</Link>
                         <p>promote@marketing.com</p>
                     </div>
                     <div className="address">
                         <div className="address-header">
-                            <img/>
+                            <img src={location} alt="location icon"/>
                             <h3>Location</h3>
                         </div>
                         <p className="office-address">10 Sun House, 65 Riving 2nd street, New York, USA.</p>
@@ -47,11 +53,11 @@ const Footer=()=>{
                 </div>
                 <div className="features">
                     <div className="pages">
-                        <div className="pages-header">
-                            <img/>
+                        <div className="section-header">
+                            <img src={pages} alt="pages icon"/>
                             <h3>Pages</h3>
                         </div>
-                        <div className="pages-list">
+                        <div className="items-list">
                             <Link to="#">Home</Link>
                             <Link to="#">About</Link>
                             <Link to="#">Blog</Link>
@@ -61,11 +67,11 @@ const Footer=()=>{
                         </div>
                     </div>
                     <div className="utilities">
-                        <div className="utilities-header">
-                            <img/>
+                        <div className="section-header">
+                            <img src={utilities} alt="utilities icon"/>
                             <h3>Utility Pages</h3>
                         </div>
-                        <div className="utilities-list">
+                        <div className="items-list">
                             <Link to="#">Styleguide</Link>
                             <Link to="#">Licenses</Link>
                             <Link to="#">Changelog</Link>
@@ -74,11 +80,11 @@ const Footer=()=>{
                         </div>
                     </div>
                     <div className="follows">
-                        <div className="follows-header">
-                            <img/>
+                        <div className="section-header">
+                            <img src={follows} alt="follows"/>
                             <h3>Follows</h3>
                         </div>
-                        <div className="follows-list">
+                        <div className="items-list">
                             <Link to="#">Facebook</Link>
                             <Link to="#">Twitter</Link>
                             <Link to="#">Instagram</Link>
