@@ -33,6 +33,7 @@ import Pricing from "../../components/pricing/pricingcomponet"
 import Article from "../../components/article/article"
 import "./home.css"
 import Footer from "../../components/footer/footer";
+import Stats from "../../components/stats/stats";
 
 
 const Accordionitems=[
@@ -213,32 +214,7 @@ function Home(){
                             <img src={keyboard} loading="lazy"/>
                         </div>
                     </div>
-                    <div className="project-footer">
-                        <div className="project-stat">
-                            <h4 className="client-title">325 <span style={{color:"blue"}}>+</span></h4>
-                            <div>
-                                <p className="client-content">CLIENTS WORLDWIDE</p>
-                            </div>
-                        </div>
-                        <div className="project-stat">
-                            <h4 className="client-title">975 <span style={{color:"red"}}>+</span></h4>
-                            <div>
-                                <p className="client-content">PROJECTS COMPLETED</p>
-                            </div>
-                        </div>
-                        <div className="project-stat">
-                            <h4 className="client-title">70 <span style={{color:" #FFDC60"}}>+</span></h4>
-                            <div>
-                                <p className="client-content">TEAM MEMBERS</p>
-                            </div>
-                        </div>
-                        <div className="project-stat">
-                            <h4 className="client-title">85m <span style={{color:"#38E65E"}}>+</span></h4>
-                            <div>
-                                <p className="client-content">REVENUE GENERATED</p>
-                            </div>
-                        </div>
-                    </div>
+                    <Stats addborder={true}/>
                 </div>
             </div>
             

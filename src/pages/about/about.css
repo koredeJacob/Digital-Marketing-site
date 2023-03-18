@@ -1,0 +1,35 @@
+.services-hero{
+    position: relative;
+    overflow: hidden;
+    height: 355px;
+    background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
+    background-size: 100%;
+}
+
+.about-stats{
+    background-color: #292930;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.about-stats div{
+    margin-top: 0;
+}
+
+@media (min-width:480px){
+    .services-hero{
+        height: 426px;
+    }
+}
+
+@media (min-width:768px) {
+    .services-hero {
+        height: 521px;
+    }
+}
+
+@media (min-width:990px){
+    .services-hero{
+        height: 605px;
+    }
+}

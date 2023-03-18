@@ -288,33 +288,6 @@
     box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.25);
 }
 
-.project-footer{
-    display: grid;
-    grid-template-columns: 90%;
-    margin-top: 50px;
-    padding-top: 30px;
-    border-top: 1px solid #5d5d63;
-}
-
-.project-stat{
-    display: flex;
-    align-items: center;
-    gap:20px;
-    color: white;
-}
-
-.client-title{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 20px 0;
-}
-
-.client-content{
-    color: #D0D0D0;
-    font-family: 'Noto Sans';
-    letter-spacing: 0.135em;
-}
-
 .pricing-container{
     display: grid;
     grid-template-columns: 90%;
@@ -410,9 +383,6 @@
     .second{
         margin-top: 50px;
     }
-    .project-stat{
-        justify-content: center;
-    }
     .more-articles{
         width:180px;
     }
@@ -441,10 +411,6 @@
     }
     .keyboard-background{
         padding: 30px 0;
-    }
-    .project-footer{
-        grid-template-columns: 45% 45%;
-        justify-content: space-between;
     }
     .pricing-container{
         grid-template-columns: 46% 46%;
@@ -519,7 +485,7 @@
         width: 50%;
     }
     .about-image{
-        width: 128.5%;
+        width: 126%;
     }
     .about-sub{
         flex-direction: row;
@@ -557,16 +523,6 @@
     .keyboard-background img{
         width: 80%;
     } 
-    .project-stat div{
-        width: 59%;
-    }
-    .project-footer {
-        grid-template-columns: 22% 22% 22% 22%; 
-        justify-content: space-evenly; 
-    }
-    .client-title{
-        font-size: 28px;
-    }
     .home-project{
         padding: 80px 0;
     }

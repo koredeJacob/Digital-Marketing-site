@@ -1,0 +1,95 @@
+.banner-center-circle{
+    position: absolute;
+    bottom: -25%;
+    width:280px;
+    height:280px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 100%;
+    background-color: #F4F6FB;
+    background-image: url('../../assets/grid.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.banner-circle-text{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    top: 30%;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.banner-circle-first,.banner-circle-second,.banner-circle-third{
+    position: absolute;
+    width: 308px;
+    height: 308px;
+    border-radius: 100%;
+    filter: blur(163px);
+}
+
+.banner-circle-first{ 
+    right: 24px;
+    bottom: -44px; 
+}
+
+.banner-circle-second{
+    left: 360px;
+    bottom: 6%;  
+}
+
+.banner-circle-third{
+    width: 400px;
+    height: 400px;
+    right:289px;
+    bottom: -14%;
+}
+
+@media (min-width:480px){
+    .banner-center-circle{
+        width:450px;
+        height: 450px;
+        bottom: -40%;
+    }
+    .banner-circle-text{
+        font-size: 45px;
+    }
+}
+
+@media (min-width:768px){
+    .banner-center-circle {
+        width: 550px;
+        height: 550px;
+    }
+    .banner-circle-text {
+        font-size: 50px;
+    }
+}
+
+@media (min-width:990px){
+    .banner-center-circle{
+        bottom:-30%;
+    }
+    .banner-circle-text {
+        font-size: 55px;
+    }
+}
+
+@media (min-width:1260px){
+    .banner-center-circle{
+        width: 665px;
+        height: 665px;
+        bottom: -42%;
+        background-position: 60% 60%;
+    }
+    .banner-circle-text{
+        font-size: 62px;
+    }
+    .banner-circle-second{
+        right: 600px;
+    }
+}

@@ -95,12 +95,12 @@
 }
 
 .number{
+    background-color: #3C3C45;
+    color: #FFDC60;
     display: flex;
     justify-content: center;
     width:255px;
     padding: 20px 0;
-    background-color: #3C3C45;
-    color: #FFDC60;
     border-radius: 7px;
     font-size: 25px;
     font-weight: 700;
