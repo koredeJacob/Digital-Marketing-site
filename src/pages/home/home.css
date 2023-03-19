@@ -137,11 +137,10 @@
 
 .about-image-container{
     width:100%;
-    overflow: hidden;
 }
 
 .about-image{
-    width: 140%;
+    width: 100%;
     height: auto;
 }
 
@@ -176,6 +175,7 @@
     color: #292930;
     font-size: 28px;
     margin-top: 0;
+    letter-spacing: 0.36px;
 }
 
 .about-text{
@@ -345,9 +345,6 @@
     .monitor{
         width:100%;
     }
-    .about-image{
-        width: 128%;
-    }
     .about-title h2{
         font-size: 35px;
     }
@@ -455,9 +452,6 @@
         width: 85%;
         margin: auto;
     }
-    .about-image{
-        width: 120%;
-    }
     .about-text,.point-text{
         font-size: 18px;
     }
@@ -485,7 +479,7 @@
         width: 50%;
     }
     .about-image{
-        width: 126%;
+        width: 140%;
     }
     .about-sub{
         flex-direction: row;

@@ -1,9 +1,15 @@
 .services-hero{
-    position: relative;
-    overflow: hidden;
     height: 355px;
     background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
     background-size: 100%;
+}
+
+.banner-container{
+    position: absolute;
+    top:0%;
+    height: 355px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .about-stats{
@@ -16,20 +22,199 @@
     margin-top: 0;
 }
 
+.aboutus-about-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 1400px;
+}
+
+.aboutus-about-words{
+    position: relative;
+    top:-45px;
+}
+
+.desktop img{
+    width: 100%;
+    height: auto;
+}
+
+.aboutus-about-header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutus-about-main{
+    font-size: 15px;
+    letter-spacing: 0.135em;
+    font-family: "Noto Sans";
+    color: #292930;
+}
+
+.aboutus-about-info span{
+    color: #FEC90C;
+}
+
+.aboutus-about-main h2{
+    font-family: "Nunito";
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    color: #292930;
+    margin-top: 0;
+}
+
+.aboutus-about-subcontent{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px ;
+    border-top: 1px solid #CFCFCF;
+}
+
+.aboutus-button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutus-about-button{
+    display: flex;
+    background-color: #292930;
+    color: white;
+    height: 48px;
+    padding: 10px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.aboutus-about-button img{
+    width: 32px;
+    height: auto;
+}
+
+.aboutus-about-button h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.aboutus-about-text{
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.getintouch a{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding:15px 0;
+    background-color: #f6f6f6;
+    border: 1.5px solid #292930;
+    border-radius: 7px;
+    transition: all 0.3s ease-out;
+}
+
+.getintouch a:hover{
+    color:white;
+    background-color: #292930;
+}
+
 @media (min-width:480px){
-    .services-hero{
+    .services-hero,.banner-container{
         height: 426px;
+    }
+    .aboutus-about-subcontent{
+        padding-top: 30px;
+    }
+    .aboutus-about-main h2{
+        font-size: 35px;
+    }
+    .aboutus-about-button{
+        width:fit-content;
+        padding:10px 20px;
+    }
+    .getintouch a{
+        width: fit-content;
+        padding: 15px 20px;
     }
 }
 
 @media (min-width:768px) {
-    .services-hero {
+    .services-hero,.banner-container {
         height: 521px;
+    }
+    .aboutus-about-words{
+        top: -65px;
+    }
+    .aboutus-about-button{
+        height: 52px;
+        gap:15px;
+    }
+    .aboutus-about-button h3{
+        font-size: 21px;
+    }
+    .getintouch a{
+        padding: 20px 35px;
     }
 }
 
 @media (min-width:990px){
-    .services-hero{
+    .services-hero,.banner-container{
         height: 605px;
+    }
+    .aboutus-about-words {
+        top: -150px;
+    }
+    .aboutus-about-main h2 {
+        width: 55%;
+        font-size: 40px;
+    }
+    .aboutus-button-container{
+        gap:25px;
+    }
+}
+
+@media (min-width:1280px){
+    .aboutus-about-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutus-about-content{
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    .aboutus-about-words{
+        top:90px;
+    }
+    .desktop{
+        width:40%;
+        min-width: 550px;
+    }
+    .desktop img{
+        width: 150%;
+    }
+    .aboutus-about-words{
+        left: -5px;
+        width: 50%;
+        min-width: 665px;
+        height: fit-content;
+    }
+    .aboutus-about-header{
+        flex-direction: row;
+        align-items:flex-start;
+        gap:30px;
+    }
+     .aboutus-about-main h2 {
+         width: 100%;
+    }
+    .aboutus-button-container{
+        flex-direction: row;   
     }
 }

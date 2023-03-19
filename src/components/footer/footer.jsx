@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import logo from "../../assets/logo white.png"
-import megaphone from "../../assets/megaphonefooter.png"
-import utilities from "../../assets/utilities.png"
-import phone from "../../assets/phone.png"
-import location from "../../assets/location.png"
-import follows from "../../assets/follows.png"
-import pages from "../../assets/pages.png"
+import logo from "../../assets/homeimages/logo white.png"
+import megaphone from "../../assets/homeimages/megaphonefooter.png"
+import utilities from "../../assets/homeimages/utilities.png"
+import phone from "../../assets/homeimages/phone.png"
+import location from "../../assets/homeimages/location.png"
+import follows from "../../assets/homeimages/follows.png"
+import pages from "../../assets/homeimages/pages.png"
 
 import "./footer.css"
 

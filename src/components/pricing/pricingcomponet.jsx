@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import excluded from "../../assets/excluded.png"
-import included from "../../assets/included.png"
+import excluded from "../../assets/homeimages/excluded.png"
+import included from "../../assets/homeimages/included.png"
 import "./pricingcomponent.css"
 
 const Pricing=({items, index})=>{

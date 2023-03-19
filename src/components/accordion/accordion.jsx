@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 
-import vector from "../../assets/vector.png"
+import vector from "../../assets/homeimages/vector.png"
 import "./accordion.css"
 
 const Accordion=({items})=>{

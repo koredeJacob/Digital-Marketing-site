@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 
 import './navigation.css'
-import logo from '../../assets/Logo.png'
+import logo from '../../assets/homeimages/Logo.png'
 
 
 function Nav() {
@@ -25,7 +25,6 @@ function Nav() {
 						<span className='third-line' style={{backgroundColor: `${Show?'#292930':'#f6f6f6'}`}}></span>
 					</div>
 				</div>
-
 				{Show!==null &&<nav className={`menu ${ Show ? 'open' : 'close' }`}>
 					<Link to='/'>Home</Link>
 					<Link to='/Aboutus'>About</Link>
