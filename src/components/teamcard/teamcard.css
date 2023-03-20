@@ -1,0 +1,67 @@
+.team-card{
+    position: relative;
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+    padding: 25px 25px 30px;
+    background: white;
+    z-index: 1;
+}
+
+.team-card::before{
+    position: absolute;
+    content: "";
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.team-card:hover::before{
+    opacity: 1;
+}
+
+.team-card-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.blue-line{
+    margin: auto;
+    margin-top: 30px;
+    width: 80px;
+    height: 0px;    
+    border: 2px solid #5956E8;
+}
+
+.team-member-info p,.team-member-info h3{
+    text-align: center;
+    letter-spacing: 0.36px;
+}
+
+.team-member-info h3{
+    color: #292930;
+    margin-bottom: 0;
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.team-member-info p{
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0;
+    line-height: 26px;
+    color: #555555;   
+}
+
+.team-socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
