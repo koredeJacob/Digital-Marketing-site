@@ -13,8 +13,20 @@
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    animation-name: moveup;
+    animation-duration: 0.7s;
 }
 
+@keyframes moveup {
+    0%{
+        transform: translateY(12%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .banner-circle-text{
     position: relative;
     width: fit-content;

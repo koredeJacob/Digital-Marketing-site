@@ -10,6 +10,7 @@
 .team-card::before{
     position: absolute;
     content: "";
+    border-radius: 15px;
     top:0;
     right: 0;
     left: 0;
@@ -62,6 +63,6 @@
 
 .team-socials{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     gap: 10px;
 }

@@ -135,6 +135,14 @@
     max-width: 1400px;
 }
 
+.aboutus-office{
+    background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    gap:30px;
+}
+
 @media (min-width:480px){
     .services-hero,.banner-container{
         height: 426px;

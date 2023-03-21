@@ -6,6 +6,8 @@ import atsymbol from "../../assets/homeimages/atsymbol.png"
 import bullseye from "../../assets/homeimages/pattern.png"
 import megaphone from "../../assets/services-images/megaphone.png"
 import handshake from "../../assets/aboutimages/handshake.png"
+import america from "../../assets/aboutimages/america.png"
+import canada from "../../assets/aboutimages/canada.png"
 import person1 from "../../assets/aboutimages/person1.jpg"
 import person2 from "../../assets/aboutimages/person2.jpg"
 import person3 from "../../assets/aboutimages/person3.jpg"
@@ -13,7 +15,8 @@ import Nav from "../../components/navigation/navigation"
 import Banner from "../../components/banner/banner"
 import Header from "../../components/header/header"
 import Stats from "../../components/stats/stats"
-import TeamCard from "../../components/teamcard/teamcard";
+import TeamCard from "../../components/teamcard/teamcard"
+import Office from "../../components/office/office" 
 import "./about.css"
 
 function AboutUs(){
@@ -74,6 +77,15 @@ function AboutUs(){
                     <TeamCard name="Richard Walsh" role="Co-Founder" picture={person2}/>
                     <TeamCard name="Elspeth Clarkson" role="Creative Director" picture={person3}/>
                 </div>
+            </div>
+
+            <div className="aboutus-office">
+                <Office flag={america} city="San Francisco, USA" address1="1650 Page. San Francisco" 
+                    address2="Carlofornia(CA), 94117" phone="(414) 809 - 2514" email="contact@poromote.com"/>
+                <Office flag={canada} city="Toronto, CA" address1="6 Queens Park Cres W." 
+                    address2="Toronto, Canada" phone="(414) 809 - 2598" email="contacta@poromote.com"/>
+                <Office flag={america} city="Chicago, USA" address1="1314 Oak Avenue. Chicago," 
+                    address2="Illinois, 60607" phone="(414) 809 - 2494" email="contactchia@poromote.com"/>
             </div>
         </div>
     )
