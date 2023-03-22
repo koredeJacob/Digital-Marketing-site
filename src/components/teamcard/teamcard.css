@@ -66,3 +66,10 @@
     justify-content: center; 
     gap: 10px;
 }
+
+@media (min-width:990px) {
+    .team-card,.team-card::before {
+        border-radius: 30px;
+    }
+}
+

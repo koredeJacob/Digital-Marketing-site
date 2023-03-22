@@ -137,10 +137,28 @@
 
 .aboutus-office{
     background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
+    padding: 80px 0;
+    margin-top:80px;
+}
+
+.office-wrapper{
+    width:90%;
+    margin: auto;
+    max-width: 1400px;
+}
+
+.office-header{
+    width: 90%;
+    margin: auto;
+}
+
+.office-container{
     display: grid;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 @media (min-width:480px){
@@ -181,8 +199,14 @@
         padding: 20px 35px;
     }
     .aboutus-team-container{
-        grid-template-columns: 45% 45%;
+        width: 90%;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
         margin-top: 40px;
+    }
+    .aboutus-office{
+        padding: 100px 0;
+        margin-top: 100px;
     }
 }
 
@@ -201,8 +225,15 @@
         gap:25px;
     }
     .aboutus-team-container{
-        grid-template-columns: 30% 30% 30% ;
+        grid-template-columns: 32% 32% 32% ;
         margin-top: 50px;
+    }
+    .office-container{
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+    .office-header{
+        width: 92%;
     }
 }
 
@@ -242,5 +273,12 @@
     }
     .aboutus-button-container{
         flex-direction: row;   
+    }
+    .office-container{
+        grid-template-columns: 32% 32% 32%;
+    }
+    .aboutus-office {
+        padding: 140px 0;
+        margin-top: 140px;
     }
 }

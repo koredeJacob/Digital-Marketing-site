@@ -1,7 +1,59 @@
 .office-card{
     box-sizing: border-box;
-    padding: 20px;
+    padding: 25px 20px;
     background-color:white;
     box-shadow: 0px 2px 4px rgba(146, 146, 146, 0.25);
     border-radius: 15px;
+}
+
+.office-address h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 110.5%;
+    color: #292930;
+}
+
+.office-address p{
+    font-family: "Noto Sans";
+    color: #555;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.office-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.office-contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: #555;
+    font-size: 20px;
+    line-height: 110.5%;
+}
+
+@media (min-width:480px){
+    .office-card{
+        padding: 50px 30px;
+    }
+    .office-contact-item{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width:990px){
+    .office-card{
+        border-radius: 30px;
+    }
+    .office-address h3,.office-address p{
+        font-size: 25px;
+    }
+    .office-contact-item{
+        font-size: 22px;
+    }
 }
