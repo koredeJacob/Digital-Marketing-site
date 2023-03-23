@@ -147,18 +147,11 @@
     max-width: 1400px;
 }
 
-.office-header{
-    width: 90%;
-    margin: auto;
-}
-
 .office-container{
     display: grid;
     grid-template-columns: 100%;
     justify-content: center;
     gap: 30px;
-    max-width: 1400px;
-    margin: auto;
 }
 
 @media (min-width:480px){
@@ -231,9 +224,6 @@
     .office-container{
         grid-template-columns: 48% 48%;
         justify-content: space-between;
-    }
-    .office-header{
-        width: 92%;
     }
 }
 

@@ -34,21 +34,15 @@
 .title-sub {
     margin-top: 20px;
     text-align: center;
-    color: #D0D0D0;
     font-family: 'Noto Sans';
     letter-spacing: 0.135em;
 }
 
 .title-text {
-    color: #fff;
     font-size: 30px;
     font-weight: 600;
     line-height: 118.5%;
     text-align: center;
-}
-
-.title-sub span {
-    color: #ffdc60;
 }
 
 .services-button {
@@ -58,15 +52,25 @@
     gap: 10px;
     width: 100%;
     margin: auto;
-    background: #fff;
-    color: #292930;
     padding: 22px 0px;
     border-radius: 7px;
     font-size: 18px;
     transition: background 0.4s;
 }
 
-.services-button:hover {
+.light{
+    color: #292930; 
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.dark{
+    color: #fff;
+    background-color:#292930;
+    transition: all 0.3s ease-out;
+}
+
+.light:hover,.dark:hover {
     background: #ffdc60;
     color: #292930;
 }

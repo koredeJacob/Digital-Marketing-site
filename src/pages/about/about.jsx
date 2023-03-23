@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 import desktop from "../../assets/aboutimages/desktop.png"
 import atsymbol from "../../assets/homeimages/atsymbol.png"
@@ -19,6 +19,7 @@ import Stats from "../../components/stats/stats"
 import TeamCard from "../../components/teamcard/teamcard"
 import Office from "../../components/office/office" 
 import { ServicesHeading } from "../../components/services-component/services-container"
+import Footer from "../../components/footer/footer"
 
 import "./about.css"
 
@@ -84,21 +85,20 @@ function AboutUs(){
 
             <div className="aboutus-office">
                 
-                    <div className="office-header">
-                        <ServicesHeading titletext="Come visit us. We are all around the world" spantext="04 . OUR OFFICES"
-                            image={office} buttontext="Get in touch"/>
-                    </div>
                     <div className="office-wrapper">
-                    <div className="office-container">
-                        <Office flag={america} city="San Francisco, USA" address1="1650 Page. San Francisco" 
-                            address2="Carlofornia(CA), 94117" phone="(414) 809 - 2514" email="contact@poromote.com"/>
-                        <Office flag={canada} city="Toronto, CA" address1="6 Queens Park Cres W." 
-                            address2="Toronto, Canada" phone="(414) 809 - 2598" email="contacta@poromote.com"/>
-                        <Office flag={america} city="Chicago, USA" address1="1314 Oak Avenue. Chicago," 
-                            address2="Illinois, 60607" phone="(414) 809 - 2494" email="contactchia@poromote.com"/>
-                    </div>
+                        <ServicesHeading titletext="Come visit us. We are all around the world" spantext="04 . OUR OFFICES"
+                            image={office} buttontext="Get in touch" light={false}/>
+                        <div className="office-container">
+                            <Office flag={america} city="San Francisco, USA" address1="1650 Page. San Francisco" 
+                                address2="Carlofornia(CA), 94117" phone="(414) 809 - 2514" email="contact@poromote.com"/>
+                            <Office flag={canada} city="Toronto, CA" address1="6 Queens Park Cres W." 
+                                address2="Toronto, Canada" phone="(414) 809 - 2598" email="contacta@poromote.com"/>
+                            <Office flag={america} city="Chicago, USA" address1="1314 Oak Avenue. Chicago," 
+                                address2="Illinois, 60607" phone="(414) 809 - 2494" email="contactchia@poromote.com"/>
+                        </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

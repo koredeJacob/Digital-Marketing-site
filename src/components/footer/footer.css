@@ -1,6 +1,5 @@
 .footer-container{
     background-color:#292930;
-    margin-top: 75px;
     display: flex;
     flex-direction: column;
     row-gap:60px;
@@ -51,8 +50,12 @@
     color: white;
     font-size: 18px;
     border-radius: 7px;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 20px 20px;
     border: 0px;
+}
+
+.text-input::placeholder{
+    color: white;
 }
 
 .form-button{

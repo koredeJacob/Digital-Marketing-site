@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./services-container.css"
 import mobilephone from "../../assets/services-images/mobilephone.png"
@@ -18,7 +18,7 @@ const ServicesContainer = ()=>{
         <div className="home-services">
             <div className="wrapper">
                 <ServicesHeading titletext="High-impact digital services to take your business to the next level" spantext="01 . SERVICES"
-                image={settings} buttontext="Our Services"/>
+                image={settings} buttontext="Our Services" light={true}/>
                 <div className="services-content">
                     <ServicesGrid image={mobilephone} sub='Social Media Marketing' text='Lorem ipsum dolor sit dilimi amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
                     <ServicesGrid image={Megaphone} sub='Paid Advertising' text='Lorem ipsum dolor sit dilimi amet consectetur adipisicing elit. Harum eligendi aliquid doloribus?'/>
@@ -33,7 +33,8 @@ const ServicesContainer = ()=>{
 
 }
 
-export const ServicesHeading=({titletext, image,buttontext,spantext})=>{
+export const ServicesHeading=({titletext, image,buttontext,spantext,light})=>{
+    
     return (<motion.div className="services-heading" 
                     initial={{opacity:0,x:"-20%"}} 
                     whileInView={{opacity:1,x:0}}
@@ -43,13 +44,13 @@ export const ServicesHeading=({titletext, image,buttontext,spantext})=>{
                         <div className="info-div">
                             <img src={image} loading='lazy'/>
                             <div className="title">
-                                <p className="title-sub"> <span>/ / </span> {spantext}</p>
-                                <h2 className="title-text">{titletext}</h2>
+                                <p className="title-sub" style={light ?{color:"#d0d0d0"}:{color:"#292930"}}> <span style={light ?{color:"#ffdc60"}:{color:"#5956e8"}}>/ / </span> {spantext}</p>
+                                <h2 className="title-text" style={light ?{color:"#fff"}:{color:"#292930"}}>{titletext}</h2>
                             </div>
                         </div>
-                        <Link to="#" className="services-button"> 
+                        <Link to="#" className={`services-button ${light? "light" : "dark"}`}> 
                             <div>{buttontext}</div>
-                            <img src={blue}/>
+                            <img src={blue} className="arrow icon"/>
                         </Link>           
                     </div>
                 </motion.div>)

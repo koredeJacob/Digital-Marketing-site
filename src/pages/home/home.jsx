@@ -208,7 +208,7 @@ function Home(){
             <div className="home-project">
                 <div className="wrapper">
                     <ServicesHeading titletext="Browse our latest case study on Marketing Agency"
-                    buttontext="Case studies" spantext="05. CASE STUDIES" image={redicon}/>
+                    buttontext="Case studies" spantext="05. CASE STUDIES" image={redicon} light={true}/>
                     <div className="project-content">
                         <Accordion items={Accordionitems}/>
                         <div className="keyboard-background">
