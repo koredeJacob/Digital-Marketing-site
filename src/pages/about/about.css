@@ -154,6 +154,12 @@
     gap: 30px;
 }
 
+.aboutus-services{
+    background-color: #292930;
+    padding: 70px 0;
+}
+
+
 @media (min-width:480px){
     .services-hero,.banner-container{
         height: 426px;

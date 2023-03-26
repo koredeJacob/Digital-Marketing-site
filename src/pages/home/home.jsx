@@ -176,7 +176,7 @@ function Home(){
             </div>
 
             <div className="home-process">
-                <Header spantext=" O3. PROCESS" image={ladder} content="A simple, yet powerful and efficient digital process"/>
+                <Header spantext=" O3. PROCESS" image={ladder} content="A simple, yet powerful and efficient digital process" light={false}/>
                 <div className="illustrations">
                     <div className="illustration-content">
                         <img src={charts}/>
@@ -220,7 +220,7 @@ function Home(){
             </div>
             
             <div className="home-pricing">
-                <Header image={dollars} spantext="06 . PRICE & PLAN" content="Our Flexible Pricing Plans"/>
+                <Header image={dollars} spantext="06 . PRICE & PLAN" content="Our Flexible Pricing Plans" light={false}/>
                 <div className="pricing-container">
                     {pricingitems.map((pricingitem,i)=>{
                         return <Pricing key={i} index={i} items={pricingitem}/>

@@ -12,6 +12,7 @@ import person1 from "../../assets/aboutimages/person1.jpg"
 import person2 from "../../assets/aboutimages/person2.jpg"
 import person3 from "../../assets/aboutimages/person3.jpg"
 import office from "../../assets/aboutimages/office icon.png"
+import verified from "../../assets/aboutimages/verified.png"
 import Nav from "../../components/navigation/navigation"
 import Banner from "../../components/banner/banner"
 import Header from "../../components/header/header"
@@ -22,6 +23,7 @@ import { ServicesHeading } from "../../components/services-component/services-co
 import Footer from "../../components/footer/footer"
 
 import "./about.css"
+import CarouselContainer from "../../components/carousel/carousel"
 
 function AboutUs(){
     return (
@@ -74,8 +76,21 @@ function AboutUs(){
                     </div>
                 </div>
             </div>
+
+            <div className="aboutus-services">
+                <Header spantext=" 02 . OUR VALUES " image={verified} content="The core values behind our work" light={true}/>
+                <CarouselContainer/>
+                <div className="aboutus-services-buttons">
+                    <div className="aboutus-getintouch">
+                        <Link to="#">Get In Touch</Link>
+                    </div>
+                    <div className="aboutus-services-button">
+                        <Link to="#">Our Services</Link>
+                    </div>
+                </div>
+            </div>
             <div className="aboutus-team">
-                <Header spantext=" O3. OUR TEAM" image={handshake} content="Our team of expert marketers"/>
+                <Header spantext=" O3 . OUR TEAM" image={handshake} content="Our team of expert marketers" light={false}/>
                 <div className="aboutus-team-container">
                     <TeamCard name="Vincie Vincent" role="Lead Manager" picture={person1}/>
                     <TeamCard name="Richard Walsh" role="Co-Founder" picture={person2}/>
