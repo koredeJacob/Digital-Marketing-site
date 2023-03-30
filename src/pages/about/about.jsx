@@ -13,6 +13,7 @@ import person2 from "../../assets/aboutimages/person2.jpg"
 import person3 from "../../assets/aboutimages/person3.jpg"
 import office from "../../assets/aboutimages/office icon.png"
 import verified from "../../assets/aboutimages/verified.png"
+import blue from "../../assets/services-images/Vector (1).png"
 import Nav from "../../components/navigation/navigation"
 import Banner from "../../components/banner/banner"
 import Header from "../../components/header/header"
@@ -84,8 +85,11 @@ function AboutUs(){
                     <div className="aboutus-getintouch">
                         <Link to="#">Get In Touch</Link>
                     </div>
-                    <div className="aboutus-services-button">
-                        <Link to="#">Our Services</Link>
+                    <div className="aboutus-ourservices">
+                        <Link to="#">
+                            <div>Our Services</div>
+                            <img src={blue}/>
+                        </Link>
                     </div>
                 </div>
             </div>

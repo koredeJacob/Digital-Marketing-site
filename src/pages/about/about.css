@@ -155,10 +155,42 @@
 }
 
 .aboutus-services{
+    display: flex;
+    flex-direction: column;
     background-color: #292930;
     padding: 70px 0;
+    margin-bottom: 80px;
 }
 
+.aboutus-services-buttons{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.aboutus-getintouch a,.aboutus-ourservices a{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   padding: 15px 0;
+   font-size: 18px;
+   line-height: 160%;
+}
+
+.aboutus-getintouch a{
+    color:#fff;
+    border: 1.5px solid #fff;
+    border-radius: 7px;
+}
+
+.aboutus-ourservices a{
+    align-items: center;
+    background-color: #fff;
+    gap: 6px;
+    border-radius: 7px;
+    color: #292930;
+}
 
 @media (min-width:480px){
     .services-hero,.banner-container{
@@ -177,6 +209,18 @@
     .getintouch a{
         width: fit-content;
         padding: 15px 20px;
+    }
+    .aboutus-services{
+        padding: 80px 0;
+    }
+    .aboutus-services-buttons{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus-getintouch a,.aboutus-ourservices a{
+        width: fit-content;
+        padding: 20px 35px;
     }
 }
 
@@ -206,6 +250,10 @@
     .aboutus-office{
         padding: 100px 0;
         margin-top: 100px;
+    }
+    .aboutus-services {
+        padding:100px 0;
+        margin-bottom: 100px;
     }
 }
 
@@ -276,5 +324,10 @@
     .aboutus-office {
         padding: 140px 0;
         margin-top: 140px;
+    }
+    .aboutus-services{
+        overflow: hidden;
+        padding: 150px 0;
+        margin-bottom: 130px;
     }
 }
