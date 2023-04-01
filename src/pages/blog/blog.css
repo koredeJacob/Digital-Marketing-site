@@ -1,0 +1,21 @@
+.blog-section{
+    margin: 80px 0;
+}
+
+@media(min-width:768px){
+    .blog-section{
+        margin: 100px 0;
+    }
+}
+
+@media(min-width:990px) {
+    .blog-section {
+        margin: 120px 0;
+    }
+}
+
+@media(min-width:1260px) {
+    .blog-section {
+        margin: 150px 0;
+    }
+}
