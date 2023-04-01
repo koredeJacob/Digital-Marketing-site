@@ -29,8 +29,8 @@ function Nav() {
 					<nav className={`menu ${ Show ? 'open' : 'close' }`}>
 						<Link to='/'>Home</Link>
 						<Link to='/Aboutus'>About</Link>
-						<Link to='#'>Blog</Link>
-						<Link to='/Blog'>Pages</Link>
+						<Link to='/Blog'>Blog</Link>
+						<Link to='/#'>Pages</Link>
 						<Link to='/Services'>Services</Link>
 						<Link to='/ContactUs'>Contact</Link>
 						<div className='get-started-button'>
@@ -41,8 +41,8 @@ function Nav() {
 				<nav className='menu-large'>
 					<Link to='/'>Home</Link>
 					<Link to='/Aboutus'>About</Link>
-					<Link to='#'>Blog</Link>
-					<Link to='/Blog'>Pages</Link>
+					<Link to='/Blog'>Blog</Link>
+					<Link to='/#'>Pages</Link>
 					<Link to='/Services'>Services</Link>
 					<Link to='/ContactUs'>Contact</Link>
 					<div className='get-started-button'>

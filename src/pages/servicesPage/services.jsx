@@ -1,4 +1,5 @@
 import React from "react"
+import {motion} from "framer-motion"
 
 import rocket from "../../assets/services-images/cta ship.png"
 import star from "../../assets/services-images/cta star.png"
@@ -36,7 +37,12 @@ function Services(){
                 <div className="services-cta-circle">
                     <div className="cta-circle-bg"></div>
                 </div>
-                <img className="cta-rocket" src={rocket} />
+                <motion.img 
+                    initial={{opacity:0,x:110,y:110}}
+                    whileInView={{opacity:1,x:0,y:0}}
+                    viewport={{once:true}}
+                    transition={{duration:0.5,ease:"easeOut"}}
+                    className="cta-rocket" src={rocket} />
                 <img className="cta-star" src={star} />
                 <img className="cta-polygon" src={polygon} />
                 <img className="cta-bullseye" src={bullseye} />
