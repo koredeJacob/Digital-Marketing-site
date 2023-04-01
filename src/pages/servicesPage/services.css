@@ -1,0 +1,201 @@
+.services-cta{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width:90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding:35px 20px;
+    border-radius: 15px;
+    background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
+}
+
+.services-cta-title,.services-cta-buttons{
+    margin: auto;
+}
+
+.services-cta-title{
+    position: relative;
+    z-index: 2;
+    color:#292930;
+    line-height: 110.5%;
+    letter-spacing: 0.36px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.services-cta-buttons{
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.services-cta-getintouch a,.services-cta-getstarted a{
+    display: flex;
+    justify-content: center;
+    padding:15px 0;
+    font-size: 18px;
+    line-height: 160%;
+    border-radius: 7px;
+}
+
+.services-cta-getintouch a{
+    background-color: #292930;
+    color: #fff;
+    border: 2px solid #292930;
+    transition: all 0.3s ease-out;
+}
+
+.services-cta-getintouch a:hover{
+    color: #292930;
+    background-color: #ffdc60;
+    border: 2px solid #ffdc60;
+}
+
+.services-cta-getstarted a{
+    border: 2px solid #292930;
+    transition: all 0.3s ease-out;
+}
+
+.services-cta-getstarted a:hover{
+    color: white;
+    background-color: #5956e8;
+    border: 2px solid #5956e8;
+}
+
+.cta-rocket,.cta-star,.cta-polygon,.cta-bullseye{
+    position: absolute;
+    display: none;
+}
+
+@media(min-width:480px){
+    .services-cta-buttons{
+        margin-top: 60px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .services-cta-getintouch a,.services-cta-getstarted a{
+        padding: 15px 25px;
+    }
+    .services-cta-title{
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .cta-rocket{
+        display: block;
+        width:100px;
+        height: auto;
+        right:10%;
+        top:37%;
+    }
+    .cta-star{
+        display: block;
+        right: 5%;
+        top: 55%;
+    }
+}
+
+@media (min-width:768px){
+    .services-cta{
+        border-radius: 30px;
+        padding: 60px 40px;
+        margin: 100px auto;
+    }
+    .services-cta-title{
+        width: 600px;
+        text-align: left;
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .services-cta-buttons{
+        justify-content: flex-start;
+    }
+    .services-cta-circle{
+        position: absolute;
+        background-color: #fff;
+        width:400px;
+        height: 400px;
+        border-radius:100%;
+        top:-10%;
+        right: -161px;
+        background-image: url("../../assets/homeimages/grid.png");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: 5% 120%;
+    }
+    .cta-rocket{
+        width: 27%;
+        top:80px;
+    }
+    .cta-star{
+        top:170px;
+        right: 8%;
+    }
+    .cta-bullseye{
+        display: block;
+        width: 64px;
+        bottom:41px;
+        right: 11px;
+    }
+    .cta-polygon{
+        display: block;
+        bottom: 15%;
+        right: 30%;
+    }
+    .cta-circle-bg{
+        position: absolute;
+        top:15%;
+        left: 62px;
+        width: 80%;
+        height: 80%;
+        border-radius: 100%;
+        background-color: #CFDDEC;
+        filter: blur(100px);
+    }
+}
+
+@media (min-width:990px){
+    .services-cta{
+        padding: 90px 70px;
+        margin: 120px auto;
+    }
+    .services-cta-title{
+        width: 570px;
+    }
+    .services-cta-circle{
+        font-size: 45px;
+        width: 500px;
+        height: 500px;
+        top:-15%;
+    }
+    .cta-rocket{
+        top:27px;
+    }
+    .cta-bullseye{
+        width: 80px;
+        bottom: 74px;
+        right: 35px;
+    }
+}
+
+@media (min-width:1280px){
+    .services-cta{
+        margin: 140px auto;
+    }
+    .services-cta-circle{
+        width: 600px;
+        height: 600px;
+        top:-25%;
+    }
+    .cta-rocket{
+        width: 370px;
+        top:0px;
+    }
+    .cta-star{
+        right: 4%;
+    }
+}

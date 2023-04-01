@@ -29,10 +29,10 @@ import CarouselContainer from "../../components/carousel/carousel"
 function AboutUs(){
     return (
         <div >
-            <header className="services-hero">
+            <header className="services-hero" style={{   background: "linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)"}}>
                 <Nav/>
                 <div className="banner-container">
-                    <Banner/>
+                    <Banner text="About" bluetext="us" first="#FFFA76" second="#E326AE" third="#ffc4bb"/>
                 </div>
             </header>
             <div className="about-stats">

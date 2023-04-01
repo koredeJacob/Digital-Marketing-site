@@ -1,6 +1,5 @@
 .services-hero{
     height: 355px;
-    background: linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%);
     background-size: 100%;
 }
 
@@ -180,8 +179,15 @@
 
 .aboutus-getintouch a{
     color:#fff;
+    background-color: #292930;
     border: 1.5px solid #fff;
     border-radius: 7px;
+    transition: all 0.3s ease-out;
+}
+
+.aboutus-getintouch a:hover{
+    background-color: #fff;
+    color: #292930;
 }
 
 .aboutus-ourservices a{
@@ -190,6 +196,12 @@
     gap: 6px;
     border-radius: 7px;
     color: #292930;
+    transition: all 0.3s ease-out;
+}
+
+.aboutus-ourservices a:hover{
+   background-color: #FEC90C;
+   gap:10px;
 }
 
 @media (min-width:480px){
@@ -211,6 +223,7 @@
         padding: 15px 20px;
     }
     .aboutus-services{
+        position: relative;
         padding: 80px 0;
     }
     .aboutus-services-buttons{
@@ -279,6 +292,9 @@
         grid-template-columns: 48% 48%;
         justify-content: space-between;
     }
+    .aboutus-services{
+        top: -40px;
+    }
 }
 
 @media (min-width:1280px){
@@ -329,5 +345,6 @@
         overflow: hidden;
         padding: 150px 0;
         margin-bottom: 130px;
+        top:-130px;
     }
 }
