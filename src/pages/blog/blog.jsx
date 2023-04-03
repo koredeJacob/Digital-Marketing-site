@@ -6,6 +6,7 @@ import Nav from "../../components/navigation/navigation"
 import Banner from "../../components/banner/banner"
 import Header from "../../components/header/header"
 import Article from "../../components/article/article"
+import Subscribe from "../../components/subscribe/subscribe"
 import "./blog.css"
 
 function Blog(){
@@ -19,8 +20,9 @@ function Blog(){
             </header>
             <div className="blog-section">
                 <Header image={file} light={false} spantext="01 . ARTICLES" content="Browse our content on digital marketing growth"/>
-                <Article image={articleimage} date="MARCH 10, 2023" title="The best 4 types of Marketing Strategies For Small Businesses" background="#FFF3CA" reverse={false}/>
+                <Article image={articleimage} date="MARCH 10, 2023" title="The best 4 types of Marketing Strategies For Small Businesses" background="#FFF3CA" reverse={true}/>
             </div>
+            <Subscribe/>
         </div>
     )
 }

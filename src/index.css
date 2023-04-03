@@ -1,3 +1,11 @@
+:root{
+    --primary-01:#ffdc60;
+    --primary-02:#5956E8;
+    --secondary-01:#292930;
+    --secondary-02:#555555;
+    --secondary-03:#f6f6f6;
+    --text-01:#ffffff;
+}
 body{
     font-family: 'Nunito',sans-serif;
     width: 100%;
