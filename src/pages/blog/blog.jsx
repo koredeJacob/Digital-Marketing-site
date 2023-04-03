@@ -7,6 +7,7 @@ import Banner from "../../components/banner/banner"
 import Header from "../../components/header/header"
 import Article from "../../components/article/article"
 import Subscribe from "../../components/subscribe/subscribe"
+import BlogCard from "../../components/blog card/blogcard"
 import "./blog.css"
 
 function Blog(){
@@ -23,6 +24,9 @@ function Blog(){
                 <Article image={articleimage} date="MARCH 10, 2023" title="The best 4 types of Marketing Strategies For Small Businesses" background="#FFF3CA" reverse={true}/>
             </div>
             <Subscribe/>
+            <div className="blog-cards-container">
+
+            </div>
         </div>
     )
 }
