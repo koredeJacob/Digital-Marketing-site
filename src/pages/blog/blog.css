@@ -2,15 +2,39 @@
     margin: 80px 0;
 }
 
+.blog-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.blog-card-container{
+    background-color:#fff;
+    display: grid;
+    grid-template-columns: 100%;
+    gap:20px;
+ 
+}
+
 @media(min-width:768px){
     .blog-section{
         margin: 100px 0;
+    }
+    .blog-card-container{
+        grid-template-columns: 48.5% 48.5%;
+        justify-content: space-between;
+        row-gap: 23px;
     }
 }
 
 @media(min-width:990px) {
     .blog-section {
         margin: 120px 0;
+    }
+    .blog-card-container{
+        row-gap: 25px;
     }
 }
 

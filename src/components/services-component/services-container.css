@@ -94,7 +94,7 @@
             align-items: start;
         }
         .title-text {
-            font-size: 32px;
+            font-size: 33px;
         }
         .title-sub,.title-text {
             text-align: left;
@@ -104,6 +104,8 @@
             margin: 0;
         }
 }
+
+
 
 @media (min-width:990px) {
     .services-title {
@@ -122,6 +124,7 @@
         gap: 35px;
     }
     .title-text{
+        font-size: 40px;
         max-width:600px ;
     }
 }
