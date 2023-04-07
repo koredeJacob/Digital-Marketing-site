@@ -13,6 +13,7 @@ import Subscribe from "../../components/subscribe/subscribe"
 import BlogCard from "../../components/blog card/blogcard"
 import Footer from "../../components/footer/footer"
 import "./blog.css"
+import { Link } from "react-router-dom"
 
 const blogs=[{image:socials, title:"The Best 4 Types Of Marketing Strategies For Small Businesses", filter:"content"},
         {image:brain, title:"Learn How To Increase Trafic To Your Website Organically",filter:"content"},
@@ -37,8 +38,11 @@ function Blog(){
                     <div className="latest-posts">
                           <h2>Latest Posts</h2>
                     </div>                 
-                    <div className="blog-controls-button">
-
+                    <div className="blog-controls-buttons">
+                        <Link to="#" className="blog-controls-button all-button">All</Link>
+                        <Link to="#" className="blog-controls-button">Growth</Link>
+                        <Link to="#" className="blog-controls-button">Content</Link>
+                        <Link to="#" className="blog-controls-button">Social Media</Link>
                     </div>
                 </div>
                 <div className="blog-card-container">
