@@ -5,7 +5,7 @@
 .blog-container{
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin: 80px auto;
     display: grid;
     grid-template-columns: 100%;
     gap:40px;
@@ -33,13 +33,20 @@
 .blog-controls-button{
     display: flex;
     justify-content: center;
-    border: 1.5px solid #292930;
+    border: 1.5px solid var(--secondary-01);
+    background-color: #fff;
+    color: var(--secondary-01);
     border-radius: 7px;
     padding: 10px 0;
     font-size: 18px;
     line-height: 160%;
     width: 100%;
     transition: all 0.3s ease-out;
+}
+
+.blog-controls-button.current{
+    background-color: var(--secondary-01);
+    color: #fff;
 }
 
 .blog-card-container{
@@ -67,6 +74,9 @@
 }
 
 @media(min-width:768px){
+    .blog-container{
+        margin: 100px auto;
+    }
     .blog-section{
         margin: 100px 0;
     }
@@ -84,6 +94,9 @@
 }
 
 @media(min-width:990px) {
+    .blog-container{
+        margin: 120px auto;
+    }
     .blog-section {
         margin: 120px 0;
     }
@@ -104,6 +117,9 @@
 }
 
 @media(min-width:1260px) {
+    .blog-container{
+        margin: 140px auto;
+    }
     .blog-section {
         margin: 150px 0;
     }

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import file from "../../assets/blogimages/icon (1).png"
 import socials from "../../assets/blogimages/socials 2.png"
@@ -15,11 +15,29 @@ import Footer from "../../components/footer/footer"
 import "./blog.css"
 import { Link } from "react-router-dom"
 
-const blogs=[{image:socials, title:"The Best 4 Types Of Marketing Strategies For Small Businesses", filter:"content"},
-        {image:brain, title:"Learn How To Increase Trafic To Your Website Organically",filter:"content"},
-        {image:boxes,title:"Five Ways For Agencies To Get Out Of The Recession Alive",filter:"growth"},
-        {image:socials2,title:"How To Use Your Content Marketing Strategy To Improve Retention",filter:"social"}]
+const blogs=[{image:socials, title:"The Best 4 Types Of Marketing Strategies For Small Businesses", filters:"content"},
+        {image:brain, title:"Learn How To Increase Trafic To Your Website Organically",filters:"content"},
+        {image:boxes,title:"Five Ways For Agencies To Get Out Of The Recession Alive",filters:"growth"},
+        {image:socials2,title:"How To Use Your Content Marketing Strategy To Improve Retention",filters:"social media"}]
+
 function Blog(){
+
+    const [display, setdisplay]=useState(blogs)
+    const [value,setvalue]=useState("all")
+
+    const handleFilter = (val) =>{
+        if(val==="all"){
+            setdisplay(blogs)
+            return
+        }
+        const newarray=blogs.filter((blog,i)=>blog.filters===val)
+        setdisplay(newarray)
+    }
+
+    const handleValue = (val) =>{
+        setvalue(val)
+    }
+
     return (
         <div>   
             <header className="services-hero" style={{background: "linear-gradient(111.23deg, #F5E9FF 9.95%, #FFDBD5 85.17%)"}}>
@@ -39,17 +57,16 @@ function Blog(){
                           <h2>Latest Posts</h2>
                     </div>                 
                     <div className="blog-controls-buttons">
-                        <Link to="#" className="blog-controls-button all-button">All</Link>
-                        <Link to="#" className="blog-controls-button">Growth</Link>
-                        <Link to="#" className="blog-controls-button">Content</Link>
-                        <Link to="#" className="blog-controls-button">Social Media</Link>
+                        <Link to="#" className={`blog-controls-button all-button ${value==="all"?"current":""}`} onClick={()=>{handleFilter("all"); handleValue("all")}}>All</Link>
+                        <Link to="#" className={`blog-controls-button ${value==="growth"?"current":""}`} onClick={()=>{handleFilter("growth"); handleValue("growth")}}>Growth</Link>
+                        <Link to="#" className={`blog-controls-button ${value==="content"?"current":""}`} onClick={()=>{handleFilter("content"); handleValue("content")}}>Content</Link>
+                        <Link to="#" className={`blog-controls-button ${value==="social media"?"current":""}`} onClick={()=>{handleFilter("social media"); handleValue("social media")}}>Social Media</Link>
                     </div>
                 </div>
                 <div className="blog-card-container">
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
+                  {display.map((item,i)=>{
+                    return <BlogCard key={i} image={item.image} buttontext={item.filters} title={item.title}/>
+                  })}
                 </div>
             </div>
             <Footer/>
