@@ -4,6 +4,7 @@ import handshake from "../../assets/aboutimages/handshake.png"
 import phone from "../../assets/aboutimages/phone 2.png"
 import location from "../../assets/aboutimages/location.png";
 import envelope from "../../assets/aboutimages/envelope 2.png"
+import faq from "../../assets/aboutimages/faq.png"
 import Nav from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import Header from "../../components/header/header";
@@ -11,6 +12,15 @@ import ContactBox from "../../components/contactbox/contactbox";
 import Subscribe from "../../components/subscribe/subscribe"
 import Footer from "../../components/footer/footer"
 import "./contactus.css"
+import Accordion from "../../components/accordion/accordion";
+
+
+const accordion_items=[{header:"Can i cancel or change my order?",text:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis sit ipsum possimus, consectetur ipsam aliquid sint nisi, voluptatum minima mollitia."},
+                        {header:"What's your support line to call to ask questions?",text:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis sit ipsum possimus, consectetur ipsam aliquid sint nisi, voluptatum minima mollitia."},
+                        {header:"I have a promotional or discount code?",text:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis sit ipsum possimus, consectetur ipsam aliquid sint nisi, voluptatum minima mollitia."},
+                        {header:"Can i integrate my store with Facebook?",text:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis sit ipsum possimus, consectetur ipsam aliquid sint nisi, voluptatum minima mollitia."},
+                        {header:"Where is my order? Quisque molestie",text:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis sit ipsum possimus, consectetur ipsam aliquid sint nisi, voluptatum minima mollitia."}
+                    ]
 
 function ContactUs(){
     return (
@@ -67,6 +77,10 @@ function ContactUs(){
                 </div>
             </div>
             <Subscribe/>
+            <div className="contactus-accordion-container">
+               <Header image={faq} spantext="02 . FAQ" light={false} content="Frequently Asked Questions"/>
+               <Accordion items={accordion_items} light={true}/>
+            </div>
             <Footer/>
         </div>
     )

@@ -210,7 +210,7 @@ function Home(){
                     <ServicesHeading titletext="Browse our latest case study on Marketing Agency"
                     buttontext="Case studies" spantext="05. CASE STUDIES" image={redicon} light={true}/>
                     <div className="project-content">
-                        <Accordion items={Accordionitems}/>
+                        <Accordion items={Accordionitems} light={false}/>
                         <div className="keyboard-background">
                             <img src={keyboard} loading="lazy"/>
                         </div>

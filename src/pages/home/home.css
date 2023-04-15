@@ -266,9 +266,9 @@
 }
 
 .project-content{
-    display: flex;
-    flex-direction: column;
-    gap:27px
+    display: grid;
+    grid-template-columns: 100%;
+    gap:30px;
 }
 
 .keyboard-background{
@@ -512,12 +512,11 @@
         font-size: 19px;
     }
     .project-content{
-        flex-direction: row;
-        justify-content: space-around;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
     .keyboard-background{
-        width: 45%;
+        width: 100%;
         padding: 42px 0; 
     }
     .keyboard-background img{

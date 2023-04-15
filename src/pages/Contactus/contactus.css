@@ -96,6 +96,15 @@
     line-height: 160%;
 }
 
+.contactus-accordion-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 90%;
+    margin:80px  auto;
+    max-width: 1200px;
+}
+
 @media(min-width:480px){
     .contactus-form{
         padding: 40px;
@@ -132,6 +141,9 @@
         height: 160px;
         padding: 30px 15px 15px 30px;
     }
+    .contactus-accordion-container {
+        margin: 100px auto;
+    }
 }
 
 
@@ -164,5 +176,8 @@
     }
     .form-message textarea {
         height: 230px;
+    }
+    .contactus-accordion-container {
+        margin: 140px auto;
     }
 }
