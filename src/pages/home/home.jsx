@@ -104,7 +104,7 @@ function Home(){
                             viewport={{once:true}}
                             transition={{duration:0.7}}
                         />
-                        <img src={star} className="star" alt="star"/>
+                        <img src={star} className="star" alt="star icon"/>
                     </div>
                 </div>
                 <div className="banner-circle"></div>
@@ -149,7 +149,7 @@ function Home(){
                             whileInView={{opacity:1,x:0}}
                             viewport={{once:true}}
                             transition={{duration:0.7,ease:"easeOut"}}>
-                            <img src={abouticon}/>
+                            <img src={abouticon} loading="lazy"/>
                             <div className="linebreaker"/>
                             <div className="point-container">
                                 <h3 className="point-header">Guaranteed Results</h3>
@@ -163,7 +163,7 @@ function Home(){
                             whileInView={{opacity:1,x:0}}
                             viewport={{once:true}}
                             transition={{duration:0.7,ease:"easeOut"}}>   
-                            <img src={abouticon2}/>
+                            <img src={abouticon2} loading="lazy"/>
                             <div className="linebreaker"/>
                             <div className="point-container">
                                 <h3 className="point-header">Team Of Industry Experts</h3>
@@ -183,7 +183,7 @@ function Home(){
                         whileInView={{opacity:1,y:0}}
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
-                        <img src={charts} loading="lazy"/>
+                        <img src={charts} loading="lazy" alt="image containing a chart"/>
                         <div className="illustration-text">
                             <h4>Marketing Plan</h4>
                             <p>Lorem ipsum dolor
@@ -195,7 +195,7 @@ function Home(){
                         whileInView={{opacity:1,y:0}}
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
-                        <img src={notification} loading="lazy"/>
+                        <img src={notification} loading="lazy" alt="notifications icon"/>
                         <div className="illustration-text">
                             <h4>Work Execution</h4>
                             <p>Lorem ipsum dolor
@@ -207,7 +207,7 @@ function Home(){
                         whileInView={{opacity:1,y:0}}
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
-                        <img src={graphics} loading="lazy"/>
+                        <img src={graphics} loading="lazy" alt="charts and graphs"/>
                         <div className="illustration-text">
                             <h4>Growth & Scale</h4>
                             <p>Lorem ipsum dolor
@@ -228,7 +228,7 @@ function Home(){
                         transition={{duration:0.7,ease:"easeOut"}}>
                         <Accordion items={Accordionitems} light={false}/>
                         <div className="keyboard-background">
-                            <img src={keyboard} loading="lazy"/>
+                            <img src={keyboard} loading="lazy" alt="photo of keyboard on a desk"/>
                         </div>
                     </motion.div>
                     <Stats addborder={true}/>

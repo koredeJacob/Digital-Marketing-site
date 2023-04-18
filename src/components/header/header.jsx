@@ -10,7 +10,7 @@ const Header=({image,spantext,content ,light})=>{
             whileInView={{opacity:1,y:0}}
             viewport={{once:true}}
             transition={{duration:0.7,ease:"easeOut"}}>
-            <img src={image} alt="header icon"/>
+            <img src={image} alt="header icon" loading="lazy"/>
             <div className="process-info">
                 <p className="process-text" style={light ?{color :"#d0d0d0"}:{color:"#292930"}}>
                     <span style={{color:'#5956e8'}}>// </span>

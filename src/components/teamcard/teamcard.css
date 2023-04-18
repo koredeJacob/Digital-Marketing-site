@@ -36,7 +36,7 @@
     margin-top: 30px;
     width: 80px;
     height: 0px;    
-    border: 2px solid #5956E8;
+    border: 2px solid var(--primary-02);
 }
 
 .team-member-info p,.team-member-info h3{
@@ -45,7 +45,7 @@
 }
 
 .team-member-info h3{
-    color: #292930;
+    color: var(--secondary-01);
     margin-bottom: 0;
     line-height: 35px;
     font-weight: 700;
@@ -58,7 +58,7 @@
     font-size: 18px;
     margin-top: 0;
     line-height: 26px;
-    color: #555555;   
+    color: var(--secondary-02);   
 }
 
 .team-socials{

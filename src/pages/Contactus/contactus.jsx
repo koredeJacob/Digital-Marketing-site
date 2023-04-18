@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 import handshake from "../../assets/aboutimages/handshake.png"
 import phone from "../../assets/aboutimages/phone 2.png"
@@ -41,7 +42,11 @@ function ContactUs(){
                     <ContactBox image={location} buttontext="Office" title="Location" text="10 Sunhouse Street, New York, USA."/>
                 </div>
             </div>
-            <div className="contactus-form">
+            <motion.div className="contactus-form"
+                initial={{opacity:0,y:110}}
+                whileInView={{opacity:1,y:0}}
+                viewport={{once:true}}
+                transition={{duration:0.7,ease:"easeOut"}}>
                 <div className="contactus-form-inner">
                     <form onSubmit={(e)=>e.preventDefault()} className="contactus-contact-form">
                         <div className="contactus-formsection">
@@ -75,11 +80,17 @@ function ContactUs(){
                         </div>
                     </form>
                 </div>
-            </div>
+            </motion.div>
             <Subscribe/>
             <div className="contactus-accordion-container">
                <Header image={faq} spantext="02 . FAQ" light={false} content="Frequently Asked Questions"/>
-               <Accordion items={accordion_items} light={true}/>
+               <motion.div
+                initial={{opacity:0,y:110}}
+                whileInView={{opacity:1,y:0}}
+                viewport={{once:true}}
+                transition={{duration:0.7,ease:"easeOut"}}>
+                    <Accordion items={accordion_items} light={true}/>
+                </motion.div>
             </div>
             <Footer/>
         </div>

@@ -60,7 +60,7 @@ const CarouselItem = ({image, header, position}) =>{
             <div className="carousel-item">
                 <div className="carousel-item-wrapper">
                     <div className="carousel-item-image">
-                        <img src={image} alt="card image"/>
+                        <img src={image} alt="card image" loading="lazy"/>
                     </div>
                     <div className="carousel-item-words">
                         <h3>{header}</h3>

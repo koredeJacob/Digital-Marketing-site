@@ -65,11 +65,11 @@ function AboutUs(){
                         <div className="aboutus-about-subcontent">
                             <div className="aboutus-button-container">
                                 <div className="aboutus-about-button">
-                                    <img src={bullseye}/>
+                                    <img src={bullseye} alt="bulseye icon"/>
                                     <h3>Development Scale</h3>
                                 </div>
                                 <div className="aboutus-about-button">
-                                    <img src={megaphone}/>
+                                    <img src={megaphone} alt="megaphone icon"/>
                                     <h3>Research & Strategy</h3>
                                 </div>
                             </div>

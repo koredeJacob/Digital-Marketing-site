@@ -23,17 +23,25 @@ function Services(){
             </header>
             <ServicesContainer/>
             <div className="services-cta">
-                <div className="services-cta-title">
+                <motion.div className="services-cta-title"
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
                     Get in touch and <span style={{color: "#5956E8"}}>start growing</span> with us today
-                </div>
-                <div className="services-cta-buttons">
+                </motion.div>
+                <motion.div className="services-cta-buttons"
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
                     <div className="services-cta-getintouch">
                         <Link to="#">Get In Touch</Link>
                     </div>
                     <div className="services-cta-getstarted">
                         <Link to="#">Get Started</Link>
                     </div>
-                </div>
+                </motion.div>
                 <div className="services-cta-circle">
                     <div className="cta-circle-bg"></div>
                 </div>
@@ -42,10 +50,14 @@ function Services(){
                     whileInView={{opacity:1,x:0,y:0}}
                     viewport={{once:true}}
                     transition={{duration:0.5,ease:"easeOut"}}
-                    className="cta-rocket" src={rocket} />
-                <img className="cta-star" src={star} />
+                    className="cta-rocket" src={rocket} loading="lazy" alt="rocket icon"/>
+                <img className="cta-star" src={star} loading="lazy" alt="star icon"/>
                 <img className="cta-polygon" src={polygon} />
-                <img className="cta-bullseye" src={bullseye} />
+                <motion.img className="cta-bullseye" src={bullseye} loading="lazy" alt="bulleye icon" 
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                viewport={{once:true}}
+                transition={{duration:0.7,ease:"easeOut"}}/>
             </div>
             <Footer/>
         </div>

@@ -24,7 +24,7 @@ const Footer=()=>{
                     <img src={logo} loading="lazy" alt="company logo"/>
                 </div>
                 <div className="footer-megaphone">
-                    <img src={megaphone} loading="lazy" alt="megaphone"/>
+                    <img src={megaphone} loading="lazy" alt="megaphone icon"/>
                 </div>
                 <div className="subscribenow">
                     <h3>Subscribe Now</h3>
@@ -45,7 +45,7 @@ const Footer=()=>{
                     transition={{duration:0.7,ease:"easeOut"}}>
                     <div className="phone">
                         <div className="phone-header">
-                            <img src={phone} alt="phone"/>
+                            <img src={phone} alt="phone" loading="lazy"/>
                             <h3>Get in touch with us</h3>
                         </div>
                         <Link className="number">+1 123 456 789</Link>
@@ -53,7 +53,7 @@ const Footer=()=>{
                     </div>
                     <div className="address">
                         <div className="address-header">
-                            <img src={location} alt="location icon"/>
+                            <img src={location} alt="location icon" loading="lazy"/>
                             <h3>Location</h3>
                         </div>
                         <p className="office-address">10 Sun House, 65 Riving 2nd street, New York, USA.</p>
@@ -67,7 +67,7 @@ const Footer=()=>{
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
-                            <img src={pages} alt="pages icon"/>
+                            <img src={pages} alt="pages icon" loading="lazy"/>
                             <h3>Pages</h3>
                         </div>
                         <div className="items-list">
@@ -85,7 +85,7 @@ const Footer=()=>{
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
-                            <img src={utilities} alt="utilities icon"/>
+                            <img src={utilities} alt="utilities icon" loading="lazy"/>
                             <h3>Utility Pages</h3>
                         </div>
                         <div className="items-list">
@@ -102,7 +102,7 @@ const Footer=()=>{
                         viewport={{once:true}}
                         transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
-                            <img src={follows} alt="follows"/>
+                            <img src={follows} alt="follows" loading="lazy"/>
                             <h3>Follows</h3>
                         </div>
                         <div className="items-list">

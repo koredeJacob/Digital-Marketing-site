@@ -13,7 +13,7 @@ const Article=({image,date,title,background,reverse})=>{
             viewport={{once:true}}
             transition={{duration:0.7,ease:"easeOut"}}>
             <div className="article-image" style={reverse?{order:2}:{}}>
-                <img className="cover-image" src={image} alt="article cover"/>
+                <img className="cover-image" src={image} alt="article cover" loading="lazy"/>
             </div>
             <div className="article-content" style={reverse?{order:1}:{}}>
                 <div className="article-meta">

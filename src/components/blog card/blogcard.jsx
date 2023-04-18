@@ -12,7 +12,7 @@ const BlogCard = ({image ,buttontext,title}) =>{
             viewport={{once:true}}
             transition={{duration:0.7,ease:"easeOut"}}>
             <div className="blog-card-image">
-                <img src={image} loading="lazy"/>
+                <img src={image} loading="lazy" alt="blog image"/>
             </div>
             <div className="blog-card-meta">
                 <Link>{buttontext}</Link>

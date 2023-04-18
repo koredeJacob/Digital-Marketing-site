@@ -1,5 +1,5 @@
 .home-services {
-    background: #292930;
+    background: var(--secondary-01);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -59,20 +59,20 @@
 }
 
 .light{
-    color: #292930; 
+    color: var(--secondary-01); 
     background-color: #fff;
     transition: all 0.3s ease-out;
 }
 
 .dark{
     color: #fff;
-    background-color:#292930;
+    background-color:var(--secondary-01);
     transition: all 0.3s ease-out;
 }
 
 .light:hover,.dark:hover {
-    background: #ffdc60;
-    color: #292930;
+    background: var(--primary-01);
+    color: var(--secondary-01);
 }
 
 .services-content {

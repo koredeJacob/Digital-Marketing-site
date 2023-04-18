@@ -17,7 +17,7 @@
 .services-cta-title{
     position: relative;
     z-index: 2;
-    color:#292930;
+    color:var(--secondary-01);
     line-height: 110.5%;
     letter-spacing: 0.36px;
     font-size: 30px;
@@ -44,27 +44,27 @@
 }
 
 .services-cta-getintouch a{
-    background-color: #292930;
+    background-color: var(--secondary-01);
     color: #fff;
-    border: 2px solid #292930;
+    border: 2px solid var(--secondary-01);
     transition: all 0.3s ease-out;
 }
 
 .services-cta-getintouch a:hover{
     color: #292930;
-    background-color: #ffdc60;
-    border: 2px solid #ffdc60;
+    background-color: var(--primary-01);
+    border: 2px solid var(--primary-01);
 }
 
 .services-cta-getstarted a{
-    border: 2px solid #292930;
+    border: 2px solid var(--secondary-01);
     transition: all 0.3s ease-out;
 }
 
 .services-cta-getstarted a:hover{
     color: white;
-    background-color: #5956e8;
-    border: 2px solid #5956e8;
+    background-color: var(--primary-02);
+    border: 2px solid var(--primary-02);
 }
 
 .cta-rocket,.cta-star,.cta-polygon,.cta-bullseye{

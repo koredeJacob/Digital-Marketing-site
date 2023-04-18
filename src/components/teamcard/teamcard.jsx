@@ -14,7 +14,7 @@ const TeamCard=({name,role,picture})=>{
             viewport={{once:true}}
             transition={{duration:0.7,ease:"easeOut"}}>
             <div className="team-card-image">
-                <img src={picture} loading="lazy"/>
+                <img src={picture} loading="lazy" alt="image of team member"/>
             </div>
             <div className="blue-line"></div>
             <div className="team-member-info">
@@ -22,9 +22,9 @@ const TeamCard=({name,role,picture})=>{
                 <p>{role}</p>
             </div>
             <div className="team-socials">
-                <img src={facebook}/>
-                <img src={twitter}/>
-                <img src={instagram}/>
+                <img src={facebook} alt="facebook logo"/>
+                <img src={twitter} alt="twitter logo"/>
+                <img src={instagram} alt="instagram logo"/>
             </div>
         </motion.div>
     )

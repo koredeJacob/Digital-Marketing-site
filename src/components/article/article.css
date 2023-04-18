@@ -35,7 +35,7 @@
 .article-meta a{
     width: fit-content;
     padding:10px 20px;
-    border: 1px solid #292930;
+    border: 1px solid var(--secondary-01);
     border-radius: 20px;
 }
 
@@ -43,7 +43,7 @@
     margin: 0;
     font-size: 24px;
     font-weight: 600;
-    color: #292930;
+    color:var(--secondary-01);
 }
 
 .article-info p{
@@ -51,7 +51,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 156.5%;
-    color: #555;
+    color: var(--secondary-02);
 }
 
 .article-button a{
@@ -64,12 +64,13 @@
     padding: 7px 0;
     border-radius: 10px;
     font-size: 18px;
-    color: #292930;
+    color: var(--secondary-01);
     transition: all 0.3s ease-out;
 }
 
 .article-button a:hover{
-    background-color: #FFDC60;
+    background-color: var(--primary-01);
+    gap:10px;
 }
 
 @media (min-width:480px){

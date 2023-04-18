@@ -14,7 +14,7 @@ const Office=({flag, city, address1, address2, email, phone})=>{
             viewport={{once:true}}
             transition={{duration:0.7,ease:"easeOut"}}>
             <div className="country-flag">
-                <img src={flag}/>
+                <img src={flag} loading="lazy" alt="country flag"/>
             </div>
             <div className="office-address">
                 <h3>{city}</h3>
@@ -23,13 +23,13 @@ const Office=({flag, city, address1, address2, email, phone})=>{
             <div className="office-contact">
                 <div className="office-contact-item">
                     <div className="telephone">
-                        <img src={telephone}/>
+                        <img src={telephone} alt="telephone icon"/>
                     </div>
                     <Link to="#">{phone}</Link>
                 </div>
                 <div className="office-contact-item">
                     <div className="envelope">
-                        <img src={envelope}/>
+                        <img src={envelope} alt="envelope icon"/>
                     </div>
                     <Link to="#">{email}</Link>
                 </div>

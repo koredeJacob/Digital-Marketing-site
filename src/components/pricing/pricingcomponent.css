@@ -67,24 +67,24 @@
 
 .popular{
     background-color: #f6f6f6;
-    color: #292930;
+    color: var(--secondary-01);
     transition: all 0.3s ease-out;
 }
 
 .popular:hover{
-    color: #292930;
-    background-color: #ffdc60;;
+    color: var(--secondary-01);
+    background-color: var(--primary-01);
 }
 
 .unpopular{
-    background-color:#292930 ;
+    background-color:var(--secondary-01);
     color: #fff;
     transition: all 0.3s ease-out;
 }
 
 .unpopular:hover{
-    background-color: #ffdc60;
-    color: #292930;
+    background-color: var(--primary-01);
+    color: var(--secondary-01);
 }
 
 @media (min-width:480px){

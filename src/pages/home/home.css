@@ -14,7 +14,7 @@
     width: 92%;
     margin: auto;
     margin-top: -400px;
-    color: #292930;
+    color: var(--secondary-01);
     z-index: 2;
 }
 
@@ -59,7 +59,7 @@
     font-size: 18px;
     font-weight: 400; 
     line-height: 156.5%;
-    color: #555;  
+    color: var(--secondary-02);  
 }
 
 .banner-buttons{
@@ -74,24 +74,24 @@
     width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
-    border: 1.5px solid #292930;
+    border: 1.5px solid var(--secondary-01);
     border-radius: 7px;
     text-align: center;
     transition: all 0.3s;
 }
 
 .banner-getstarted:hover {
-    background-color: #ffdc60;
-    color: #292930;
+    background-color: var(--primary-01);
+    color: var(--secondary-01);
 }
 
 .banner-services{
     background-color: #f6f6f6;
-    color: #292930;   
+    color: var(--secondary-01);   
 }
 
 .banner-getstarted,.banner-services:hover {
-    background-color: #292930;
+    background-color: var(--secondary-01);
     color: white;
 }
 
@@ -165,16 +165,16 @@
     font-weight: 500;
     line-height: 156.5%;
     letter-spacing: 0.135em;
-    color: #292930;
+    color: var(--secondary-01);
 }
 
 .about-info span{
-    color: #ffdc60;
+    color: var(--primary-01);
 }
 
 .about-title h2{
     font-weight: 600;
-    color: #292930;
+    color: var(--secondary-01);
     font-size: 28px;
     margin-top: 0;
     letter-spacing: 0.36px;
@@ -184,7 +184,7 @@
     font-family: 'Noto Sans';
     line-height: 156.5%;
     font-size: 18px;
-    color: #555555;
+    color: var(--secondary-02);
 }
 
 .about-point{
@@ -198,7 +198,7 @@
 }
 
 .point-header{
-    color: #292930;
+    color: var(--secondary-01);
     font-weight: 600;
     font-size: 22px;
     line-height: 110.5%;
@@ -208,7 +208,7 @@
     font-family: "Noto Sans";
     font-size: 18px;
     line-height: 156.5%;
-    color: #555;
+    color: var(--secondary-02);
 }
 
 .second{
@@ -225,7 +225,7 @@
     margin:auto;
     margin-bottom: 80px;
     margin-top: 25px;
-    color: #292930;
+    color: var(--secondary-01);
 }
 
 .illustrations{
@@ -262,7 +262,7 @@
 }
 
 .home-project{
-    background-color: #292930;
+    background-color: var(--secondary-01);
     margin:80px 0;
     padding: 60px 0;
 }
@@ -315,7 +315,7 @@
     gap: 7px;
     padding: 20px 0;
     border-radius: 10px;
-    background-color: #292930;
+    background-color: var(--secondary-01);
     color: white;
     width: 90%;
     margin: auto;
@@ -483,7 +483,7 @@
     }
 }
 
-@media (min-width:1260px){
+@media (min-width:1280px){
     .home-about{
         width:86%;
         flex-direction: row;
@@ -540,6 +540,9 @@
     .home-article{
         margin:140px 0;
     }
+    .agency-text{
+        font-size: 18px;
+    }
 }
 
 @media (min-width:1440px){
@@ -575,13 +578,7 @@
     }
     .banner-text{
         font-size: 55px;
-    }
-    .agency-text{
-        font-size: 18px;
-    }
-    .dummy-text{
-        font-size: 20px;
-    }   
+    } 
 }
 
 @media (min-width:2000px){
