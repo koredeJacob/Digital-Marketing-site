@@ -16,7 +16,7 @@ function Services(){
     return (
         <div>
             <header className="services-hero" style={{background: "linear-gradient(111.23deg, #CFD4FF 9.95%, #FFFFFD 85.17%)"}}>
-                <Nav/>
+                <Nav page="services"/>
                 <div className="banner-container">
                     <Banner text="Services" bluetext="" first= "#7DFFE8" second="#7CFF99" third="#EDFFBB"/>
                 </div>

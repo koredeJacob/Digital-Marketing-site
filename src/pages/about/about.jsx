@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 import desktop from "../../assets/aboutimages/desktop.png"
 import atsymbol from "../../assets/homeimages/atsymbol.png"
@@ -30,7 +31,7 @@ function AboutUs(){
     return (
         <div >
             <header className="services-hero" style={{   background: "linear-gradient(111.23deg, #F9F6DA 9.95%, #E2D5FF 85.17%)"}}>
-                <Nav/>
+                <Nav page="about"/>
                 <div className="banner-container">
                     <Banner text="About" bluetext="us" first="#FFFA76" second="#E326AE" third="#ffc4bb"/>
                 </div>
@@ -41,9 +42,17 @@ function AboutUs(){
             <div className="aboutus-about-wrapper">
                 <div className="aboutus-about-content">
                     <div className="desktop">
-                        <img src={desktop} loading="lazy"/>
+                        <motion.img src={desktop} loading="lazy"
+                        initial={{opacity:0,x:-110}}
+                        whileInView={{opacity:1,x:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}/>
                     </div>
-                    <div className="aboutus-about-words">
+                    <motion.div className="aboutus-about-words"
+                        initial={{opacity:0,x:110}}
+                        whileInView={{opacity:1,x:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="aboutus-about-header">
                             <div className="atsymbol">
                                 <img src={atsymbol} loading="lazy"/>
@@ -74,14 +83,18 @@ function AboutUs(){
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
             <div className="aboutus-services">
                 <Header spantext=" 02 . OUR VALUES " image={verified} content="The core values behind our work" light={true}/>
                 <CarouselContainer/>
-                <div className="aboutus-services-buttons">
+                <motion.div className="aboutus-services-buttons"
+                    initial={{opacity:0,y:110}}
+                    whileInView={{opacity:1,y:0}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
                     <div className="aboutus-getintouch">
                         <Link to="#">Get In Touch</Link>
                     </div>
@@ -91,7 +104,7 @@ function AboutUs(){
                             <img src={blue}/>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className="aboutus-team">
                 <Header spantext=" O3 . OUR TEAM" image={handshake} content="Our team of expert marketers" light={false}/>

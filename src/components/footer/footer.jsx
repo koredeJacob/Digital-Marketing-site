@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import {motion} from "framer-motion"
 
 import logo from "../../assets/homeimages/logo white.png"
 import megaphone from "../../assets/homeimages/megaphonefooter.png"
@@ -14,7 +15,11 @@ import "./footer.css"
 const Footer=()=>{
     return (
         <div className="footer-container">
-            <div className="subscribe-box">
+            <motion.div className="subscribe-box"
+                initial={{opacity:0,y:110}}
+                whileInView={{opacity:1,y:0}}
+                viewport={{once:true}}
+                transition={{duration:0.7,ease:"easeOut"}}>
                 <div className="footer-logo">
                     <img src={logo} loading="lazy" alt="company logo"/>
                 </div>
@@ -31,9 +36,13 @@ const Footer=()=>{
                         <input type="submit" value="Subscribe" className="form-button"/>
                     </form>
                 </div>
-            </div>
+            </motion.div>
             <div className="footer-content">
-                <div className="contact-info">
+                <motion.div className="contact-info"
+                    initial={{opacity:0,y:110}}
+                    whileInView={{opacity:1,y:0}}
+                    viewport={{once:true}}
+                    transition={{duration:0.7,ease:"easeOut"}}>
                     <div className="phone">
                         <div className="phone-header">
                             <img src={phone} alt="phone"/>
@@ -50,9 +59,13 @@ const Footer=()=>{
                         <p className="office-address">10 Sun House, 65 Riving 2nd street, New York, USA.</p>
                         <p>Location</p>
                     </div>
-                </div>
+                </motion.div>
                 <div className="features">
-                    <div className="pages">
+                    <motion.div className="pages"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
                             <img src={pages} alt="pages icon"/>
                             <h3>Pages</h3>
@@ -65,8 +78,12 @@ const Footer=()=>{
                             <Link to="#">Services</Link>
                             <Link to="#">Contact</Link>
                         </div>
-                    </div>
-                    <div className="utilities">
+                    </motion.div>
+                    <motion.div className="utilities"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
                             <img src={utilities} alt="utilities icon"/>
                             <h3>Utility Pages</h3>
@@ -78,8 +95,12 @@ const Footer=()=>{
                             <Link to="#">Not Found</Link>
                             <Link to="#">Password Protected</Link>
                         </div>
-                    </div>
-                    <div className="follows">
+                    </motion.div>
+                    <motion.div className="follows"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <div className="section-header">
                             <img src={follows} alt="follows"/>
                             <h3>Follows</h3>
@@ -90,7 +111,7 @@ const Footer=()=>{
                             <Link to="#">Instagram</Link>
                             <Link to="#">LinkedIn</Link>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

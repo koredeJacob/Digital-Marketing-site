@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 import telephone from "../../assets/aboutimages/phone.png"
 import envelope from "../../assets/aboutimages/envelope.png"
@@ -7,7 +8,11 @@ import "./office.css"
 
 const Office=({flag, city, address1, address2, email, phone})=>{
     return (
-        <div className="office-card">
+        <motion.div className="office-card"
+            initial={{opacity:0,y:110}}
+            whileInView={{opacity:1,y:0}}
+            viewport={{once:true}}
+            transition={{duration:0.7,ease:"easeOut"}}>
             <div className="country-flag">
                 <img src={flag}/>
             </div>
@@ -29,7 +34,7 @@ const Office=({flag, city, address1, address2, email, phone})=>{
                     <Link to="#">{email}</Link>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -72,7 +72,7 @@ function Home(){
     return(
         <div>
             <header className="hero">
-                <Nav/>
+                <Nav page="home" />
             
                 <div className="banner">
                     <div className="banner-content">
@@ -178,30 +178,42 @@ function Home(){
             <div className="home-process">
                 <Header spantext=" O3. PROCESS" image={ladder} content="A simple, yet powerful and efficient digital process" light={false}/>
                 <div className="illustrations">
-                    <div className="illustration-content">
-                        <img src={charts}/>
+                    <motion.div className="illustration-content"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
+                        <img src={charts} loading="lazy"/>
                         <div className="illustration-text">
                             <h4>Marketing Plan</h4>
                             <p>Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Eaque blanditiis atque quasi explicabo?</p>
                         </div>
-                    </div>
-                    <div className="illustration-content reverse" style={{marginTop:'40px'}}>
+                    </motion.div>
+                    <motion.div className="illustration-content reverse" style={{marginTop:'40px'}}
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <img src={notification} loading="lazy"/>
                         <div className="illustration-text">
                             <h4>Work Execution</h4>
                             <p>Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Eaque blanditiis atque quasi explicabo?</p>
                         </div>
-                    </div>
-                    <div className="illustration-content">
+                    </motion.div>
+                    <motion.div className="illustration-content"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <img src={graphics} loading="lazy"/>
                         <div className="illustration-text">
                             <h4>Growth & Scale</h4>
                             <p>Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Eaque blanditiis atque quasi explicabo?</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -209,12 +221,16 @@ function Home(){
                 <div className="wrapper">
                     <ServicesHeading titletext="Browse our latest case study on Marketing Agency"
                     buttontext="Case studies" spantext="05. CASE STUDIES" image={redicon} light={true}/>
-                    <div className="project-content">
+                    <motion.div className="project-content"
+                        initial={{opacity:0,y:110}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{once:true}}
+                        transition={{duration:0.7,ease:"easeOut"}}>
                         <Accordion items={Accordionitems} light={false}/>
                         <div className="keyboard-background">
                             <img src={keyboard} loading="lazy"/>
                         </div>
-                    </div>
+                    </motion.div>
                     <Stats addborder={true}/>
                 </div>
             </div>

@@ -21,11 +21,15 @@
     margin-top: 0;
 }
 
+.aboutus-about-wrapper{
+    overflow: hidden;
+}
+
 .aboutus-about-content {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .aboutus-about-words{
@@ -131,7 +135,7 @@
     margin-top: 20px;
     justify-content: center;
     gap:30px;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .aboutus-office{
@@ -143,7 +147,7 @@
 .office-wrapper{
     width:90%;
     margin: auto;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .office-container{
@@ -155,6 +159,7 @@
 
 .aboutus-services{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     background-color: #292930;
     padding: 70px 0;
@@ -293,7 +298,7 @@
         justify-content: space-between;
     }
     .aboutus-services{
-        top: -40px;
+        top: -35px;
     }
 }
 
@@ -339,12 +344,17 @@
     }
     .aboutus-office {
         padding: 140px 0;
-        margin-top: 140px;
+        margin-top: 50px;
     }
     .aboutus-services{
         overflow: hidden;
         padding: 150px 0;
         margin-bottom: 130px;
-        top:-130px;
+        top:-120px;
+    }
+    .aboutus-team {
+        position: relative;
+        top:-100px;
+        margin-bottom: 0;
     }
 }

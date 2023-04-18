@@ -4,7 +4,7 @@
     flex-direction: column;
     gap:10px;
     width:100%;
-    padding: 40px 15px;
+    padding: 20px;
     margin: auto;
     border-radius: 10px;
 }
@@ -22,7 +22,7 @@
 
 .pricing-card-title p{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -88,10 +88,30 @@
 }
 
 @media (min-width:480px){
+    .pricing-card{
+        padding: 40px 20px;
+    }
     .pricing-card-header{
         flex-direction: row;
         align-items: center;
         column-gap: 21px;
     }
+    .pricing-card-title h3{
+        font-size: 35px;
+    }
+}
 
+@media(min-width:990px){
+    .pricing-card-title h3{
+        font-size: 38px;
+    }
+}
+
+@media(min-width:1280px) {
+    .pricing-card{
+        padding: 40px;
+    }
+    .pricing-card-title h3 {
+        font-size: 50px;
+    }
 }

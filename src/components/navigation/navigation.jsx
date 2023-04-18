@@ -5,7 +5,7 @@ import './navigation.css'
 import logo from '../../assets/homeimages/Logo.png'
 
 
-function Nav() {
+function Nav({page}) {
 	const [Show,setShow]=useState(false)
 
 	const handleToggle=()=>{
@@ -35,16 +35,16 @@ function Nav() {
 						<Link to='/ContactUs'>Contact</Link>
 						<div className='get-started-button'>
 							Get Started
-						</div>
+						</div> 
 					</nav>
 				</div>
 				<nav className='menu-large'>
-					<Link to='/'>Home</Link>
-					<Link to='/Aboutus'>About</Link>
-					<Link to='/Blog'>Blog</Link>
-					<Link to='/#'>Pages</Link>
-					<Link to='/Services'>Services</Link>
-					<Link to='/ContactUs'>Contact</Link>
+					<Link style={page==="home"?{color:"#5956E8"}:{}} to='/'>Home</Link>
+					<Link style={page==="about"?{color:"#5956E8"}:{}} to='/Aboutus'>About</Link>
+					<Link style={page==="blog"?{color:"#5956E8"}:{}} to='/Blog'>Blog</Link>
+					<Link style={page==="pages"?{color:"#5956E8"}:{}} to='#'>Pages</Link>
+					<Link style={page==="services"?{color:"#5956E8"}:{}} to='/Services'>Services</Link>
+					<Link style={page==="contact"?{color:"#5956E8"}:{}} to='/ContactUs'>Contact</Link>
 					<div className='get-started-button'>
 						Get Started
 					</div>

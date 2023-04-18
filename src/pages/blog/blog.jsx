@@ -41,7 +41,7 @@ function Blog(){
     return (
         <div>   
             <header className="services-hero" style={{background: "linear-gradient(111.23deg, #F5E9FF 9.95%, #FFDBD5 85.17%)"}}>
-                <Nav/>
+                <Nav page="blog"/>
                 <div className="banner-container">
                     <Banner text="Our" bluetext="Blog" first= "#FA95D1" second="#DDFF7C" third="#FFC4BB"/>
                 </div>

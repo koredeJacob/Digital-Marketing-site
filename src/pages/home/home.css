@@ -134,6 +134,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    max-width: 1200px;
 }
 
 .about-image-container{
@@ -216,13 +217,14 @@
 
 .home-process{
     width: 92%;
-    max-width: 1440px;
+    max-width: 1200px;
     background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
     padding-top: 60px;
     padding-bottom: 60px;
     border-radius: 10px;
     margin:auto;
-    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-top: 25px;
     color: #292930;
 }
 
@@ -261,7 +263,7 @@
 
 .home-project{
     background-color: #292930;
-    margin:50px 0;
+    margin:80px 0;
     padding: 60px 0;
 }
 
@@ -294,13 +296,12 @@
     grid-template-columns: 90%;
     justify-content: center;
     gap:35px;
-    max-width: 1440px;
+    max-width: 1260px;
     margin: auto;
 }
 
 .home-article{
-    margin-top: 50px;
-    margin-bottom: 75px;
+    margin:80px 0;
 }
 
 .more-articles a{
@@ -408,6 +409,9 @@
         max-width: 400px;
         text-align: left;
     }
+    .home-project{
+        margin:100px 0;
+    }
     .reverse{
         flex-direction: row-reverse;
     }
@@ -454,6 +458,9 @@
     .about-title h2{
         font-size: 38px;
     }
+    .home-process{
+        margin-bottom:100px;
+    }
     .about-point{
         width: 85%;
         margin: auto;
@@ -463,6 +470,9 @@
     }
     .keyboard-background{
         width: 60%;
+    }
+    .home-article{
+        margin: 100px 0;
     }
     .pricing-container{
         grid-template-columns: 30% 30% 30%;
@@ -478,7 +488,6 @@
         width:86%;
         flex-direction: row;
         margin: auto;
-        max-width: 1440px;
         margin-top: 70px;
     }
     .about-image-container,.about-container{
@@ -495,6 +504,9 @@
     }
     .about-text{
         text-align: justify;
+    }
+    .home-process{
+        margin-bottom: 140px;
     }
     .about-image-container{
         margin-top: 25px;
@@ -526,7 +538,7 @@
         padding: 80px 0;
     }
     .home-article{
-        margin-top: 60px;
+        margin:140px 0;
     }
 }
 

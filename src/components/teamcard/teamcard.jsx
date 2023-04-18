@@ -1,4 +1,5 @@
 import React from "react"
+import { motion } from "framer-motion"
 
 import instagram from "../../assets/aboutimages/instagram.png"
 import facebook from "../../assets/aboutimages/facebook.png"
@@ -7,7 +8,11 @@ import "./teamcard.css"
 
 const TeamCard=({name,role,picture})=>{
     return(
-        <div className="team-card">
+        <motion.div className="team-card"
+            initial={{opacity:0,y:110}}
+            whileInView={{opacity:1,y:0}}
+            viewport={{once:true}}
+            transition={{duration:0.7,ease:"easeOut"}}>
             <div className="team-card-image">
                 <img src={picture} loading="lazy"/>
             </div>
@@ -21,7 +26,7 @@ const TeamCard=({name,role,picture})=>{
                 <img src={twitter}/>
                 <img src={instagram}/>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

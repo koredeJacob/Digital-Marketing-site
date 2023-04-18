@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { motion } from "framer-motion"
 
 import commitment from "../../assets/aboutimages/commitment.png"
 import leftarrow from "../../assets/aboutimages/left arrow.png"
@@ -32,7 +33,11 @@ const CarouselContainer = () =>{
     }
 
     return(
-        <div className="carousel-container">
+        <motion.div className="carousel-container"
+            initial={{opacity:0,x:110}}
+            whileInView={{opacity:1,x:0}}
+            viewport={{once:true}}
+            transition={{duration:0.7,ease:"easeOut"}}>
             <div className="carousel-inner">
                 {items.map((item,i)=>{
                     return <CarouselItem key={i} image={item.image} header={item.header} position={index}/>
@@ -44,7 +49,7 @@ const CarouselContainer = () =>{
             <div className={`right-control ${color===1?"clicked":""}`} onClick={()=>{handleSlide(index+1); handleColor(1)}}>
                 <img src={arrow}/>
             </div>
-        </div>
+        </motion.div>
     )
 
 }

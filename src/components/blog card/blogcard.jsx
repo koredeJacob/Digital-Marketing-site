@@ -1,11 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 import "./blogcard.css"
 
 const BlogCard = ({image ,buttontext,title}) =>{
     return (
-        <div className="blog-card">
+        <motion.div className="blog-card"
+            initial={{opacity:0,y:110}}
+            whileInView={{opacity:1,y:0}}
+            viewport={{once:true}}
+            transition={{duration:0.7,ease:"easeOut"}}>
             <div className="blog-card-image">
                 <img src={image} loading="lazy"/>
             </div>
@@ -16,7 +21,7 @@ const BlogCard = ({image ,buttontext,title}) =>{
             <div className="blog-card-title">
                 <h3>{title}</h3>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
