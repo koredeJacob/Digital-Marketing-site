@@ -22,9 +22,9 @@ const TeamCard=({name,role,picture})=>{
                 <p>{role}</p>
             </div>
             <div className="team-socials">
-                <img src={facebook} alt="facebook logo"/>
-                <img src={twitter} alt="twitter logo"/>
-                <img src={instagram} alt="instagram logo"/>
+                <img src={facebook} alt="facebook logo" loading="lazy"/>
+                <img src={twitter} alt="twitter logo" loading="lazy"/>
+                <img src={instagram} alt="instagram logo" loading="lazy"/>
             </div>
         </motion.div>
     )
