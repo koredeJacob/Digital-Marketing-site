@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 
-import instagram from "../../assets/aboutimages/instagram.png"
+import instagram from "../../assets/aboutimages/Instagram.png"
 import facebook from "../../assets/aboutimages/Facebook.png"
 import twitter from "../../assets/aboutimages/Twitter.png"
 import "./teamcard.css"
