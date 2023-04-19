@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import file from "../../assets/blogimages/Icon (1).png"
 import socials from "../../assets/blogimages/socials 2.png"
-import socials2 from "../../assets/blogimages/socials.png"
+import socials2 from "../../assets/blogimages/socialz.png"
 import boxes from "../../assets/blogimages/boxes.png"
 import brain from "../../assets/blogimages/brain.png"
 import Nav from "../../components/navigation/navigation"
