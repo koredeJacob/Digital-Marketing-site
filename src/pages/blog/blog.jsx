@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import file from "../../assets/blogimages/icon (1).png"
+import file from "../../assets/blogimages/Icon (1).png"
 import socials from "../../assets/blogimages/socials 2.png"
 import socials2 from "../../assets/blogimages/socials.png"
 import boxes from "../../assets/blogimages/boxes.png"
