@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import commitment from "../../assets/aboutimages/commitment.png"
 import leftarrow from "../../assets/aboutimages/left arrow.png"
-import arrow from "../../assets/homeimages/vector.png"
+import arrow from "../../assets/homeimages/Vector.png"
 import settings from "../../assets/aboutimages/settings.png"
 import teamwork from "../../assets/aboutimages/team work.png" 
 import portfolio from "../../assets/aboutimages/portfolio.png"

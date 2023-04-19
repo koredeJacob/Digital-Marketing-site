@@ -2,8 +2,8 @@ import React from "react"
 import { motion } from "framer-motion"
 
 import instagram from "../../assets/aboutimages/instagram.png"
-import facebook from "../../assets/aboutimages/facebook.png"
-import twitter from "../../assets/aboutimages/twitter.png"
+import facebook from "../../assets/aboutimages/Facebook.png"
+import twitter from "../../assets/aboutimages/Twitter.png"
 import "./teamcard.css"
 
 const TeamCard=({name,role,picture})=>{

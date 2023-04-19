@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import {motion} from "framer-motion"
 
-import vector from "../../assets/services-images/vector (1).png"
+import vector from "../../assets/services-images/Vector (1).png"
 import "./article.css"
 
 const Article=({image,date,title,background,reverse})=>{

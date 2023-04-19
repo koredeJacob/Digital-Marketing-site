@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './services-grid.css'
-import blue from '../../assets/services-images/vector (1).png'
-import grey from '../../assets/services-images/vector.png'
+import blue from '../../assets/services-images/Vector (1).png'
+import grey from '../../assets/services-images/Vector.png'
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

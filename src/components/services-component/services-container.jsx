@@ -10,7 +10,7 @@ import marketing from "../../assets/services-images/Marketing Plan.png"
 import funnel from "../../assets/services-images/funnel.png"
 import board from "../../assets/services-images/board.png"
 import settings from "../../assets/services-images/settings.png"
-import blue from '../../assets/services-images/vector (1).png'
+import blue from '../../assets/services-images/Vector (1).png'
 import ServicesGrid from "../../components/services-component/services-grid"
 
 const ServicesContainer = ()=>{
