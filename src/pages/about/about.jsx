@@ -42,7 +42,7 @@ function AboutUs(){
             <div className="aboutus-about-wrapper">
                 <div className="aboutus-about-content">
                     <div className="desktop">
-                        <motion.img src={desktop} loading="lazy"
+                        <motion.img src={desktop}
                         initial={{opacity:0,x:-110}}
                         whileInView={{opacity:1,x:0}}
                         viewport={{once:true}}

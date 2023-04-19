@@ -92,18 +92,8 @@ function Home(){
                     </div>
                     <div className="banner-image">
                         <img src={monitor} className="monitor" alt="monitor photo"/>
-                        <motion.img src={check} className="check" alt="check mark"
-                            initial={{opacity:0}}
-                            whileInView={{opacity:1}}
-                            viewport={{once:true}}
-                            transition={{duration:0.7}}/>
-                        <motion.img src={bullseye} 
-                            className="bullseye" alt="bullseye"
-                            initial={{opacity:0}}
-                            whileInView={{opacity:1}}
-                            viewport={{once:true}}
-                            transition={{duration:0.7}}
-                        />
+                        <img src={check} className="check" alt="check mark"/>
+                        <img src={bullseye} className="bullseye" alt="bullseye"/>
                         <img src={star} className="star" alt="star icon"/>
                     </div>
                 </div>
