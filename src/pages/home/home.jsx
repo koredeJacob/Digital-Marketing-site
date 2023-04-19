@@ -83,8 +83,8 @@ function Home(){
                         <h1 style={{margin:'0px'}} className="banner-text">A Fully Integrated Digital 
                             <span style={{color:'#5956e8'}}> Marketing </span>Agency
                         </h1>
-                        <p style={{margin:'0px'}} className='dummy-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem 
-                        mazim mundi debitis deserunt fuga id architecto, quasi iusto eius pluto.</p>
+                        <p style={{margin:'0px'}} className='dummy-text'>We understand our customer's needs and hence our work approach & systems
+                            will tend to know many things about the project result.</p>
                         <div className="banner-buttons">
                             <Link to="" className="banner-getstarted">Get Started</Link>
                             <Link to="/services" className="banner-services">Services</Link>
