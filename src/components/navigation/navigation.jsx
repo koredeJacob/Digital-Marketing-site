@@ -30,7 +30,7 @@ function Nav({page}) {
 						<Link to='/'>Home</Link>
 						<Link to='/Aboutus'>About</Link>
 						<Link to='/Blog'>Blog</Link>
-						<Link to='/#'>Pages</Link>
+						<Link to='/'>Pages</Link>
 						<Link to='/Services'>Services</Link>
 						<Link to='/ContactUs'>Contact</Link>
 						<div className='get-started-button'>

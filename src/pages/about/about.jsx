@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
-import desktop from "../../assets/aboutimages/desktop.png"
+import desktop from "../../assets/aboutimages/desktop2.jpg"
 import atsymbol from "../../assets/homeimages/atsymbol.png"
 import bullseye from "../../assets/homeimages/Pattern.png"
 import megaphone from "../../assets/services-images/Megaphone.png"
