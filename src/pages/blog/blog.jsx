@@ -15,10 +15,10 @@ import Footer from "../../components/footer/footer"
 import "./blog.css"
 import { Link } from "react-router-dom"
 
-const blogs=[{image:socials, title:"The Best 4 Types Of Marketing Strategies For Small Businesses", filters:"content"},
-        {image:brain, title:"Learn How To Increase Trafic To Your Website Organically",filters:"content"},
-        {image:boxes,title:"Five Ways For Agencies To Get Out Of The Recession Alive",filters:"growth"},
-        {image:socials3,title:"How To Use Your Content Marketing Strategy To Improve Retention",filters:"social media"}]
+const blogs=[{image:'https://d1w0kjuxtceafs.cloudfront.net/socials 2.jpg', title:"The Best 4 Types Of Marketing Strategies For Small Businesses", filters:"content"},
+        {image:'https://d1w0kjuxtceafs.cloudfront.net/brain.jpg', title:"Learn How To Increase Trafic To Your Website Organically",filters:"content"},
+        {image:'https://d1w0kjuxtceafs.cloudfront.net/boxes.jpg',title:"Five Ways For Agencies To Get Out Of The Recession Alive",filters:"growth"},
+        {image:'https://d1w0kjuxtceafs.cloudfront.net/socials.jpg',title:"How To Use Your Content Marketing Strategy To Improve Retention",filters:"social media"}]
 
 function Blog(){
 

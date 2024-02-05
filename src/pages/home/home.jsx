@@ -6,7 +6,6 @@ import monitor from "../../assets/homeimages/Pattern (3).png"
 import check from "../../assets/homeimages/Pattern (1).png"
 import bullseye from "../../assets/homeimages/Pattern.png"
 import star from "../../assets/homeimages/star.png"
-import phoneabout from "../../assets/homeimages/phoneaboutus.jpg"
 import atsymbol from "../../assets/homeimages/atsymbol.png"
 import abouticon from "../../assets/homeimages/abouticon.png"
 import abouticon2 from "../../assets/homeimages/abouticon2.png"
@@ -91,7 +90,7 @@ function Home(){
                         </div>
                     </div>
                     <div className="banner-image">
-                        <img src={monitor} className="monitor" alt="monitor photo"/>
+                        <img src='https://d1w0kjuxtceafs.cloudfront.net/Patter (3).png' className="monitor" alt="monitor photo"/>
                         <img src={check} className="check" alt="check mark"/>
                         <img src={bullseye} className="bullseye" alt="bullseye"/>
                         <img src={star} className="star" alt="star icon"/>
@@ -108,7 +107,7 @@ function Home(){
                     whileInView={{opacity:1,y:0}}
                     viewport={{once:true}}
                     transition={{duration:0.7,ease:"easeOut"}}>
-                    <img className="about-image" src={phoneabout} loading="lazy"/>
+                    <img className="about-image" src='https://d1w0kjuxtceafs.cloudfront.net/phoneaboutus.jpg' loading="lazy"/>
                 </motion.div>
                 <div className="about-container">
                     <motion.div 
@@ -218,7 +217,7 @@ function Home(){
                         transition={{duration:0.7,ease:"easeOut"}}>
                         <Accordion items={Accordionitems} light={false}/>
                         <div className="keyboard-background">
-                            <img src={keyboard} loading="lazy" alt="photo of keyboard on a desk"/>
+                            <img src='https://d1w0kjuxtceafs.cloudfront.net/keyboard.jpg' loading="lazy" alt="photo of keyboard on a desk"/>
                         </div>
                     </motion.div>
                     <Stats addborder={true}/>
@@ -236,9 +235,9 @@ function Home(){
 
             <div className="home-article">
                 <Header image={greencircle} spantext="08 . Articles" content="Browse Our Content on Growth Marketing"/>
-                <Article image={smallbusinesses} title="The Best 4 Types Of Business Strategies For Small Business" 
+                <Article image='https://d1w0kjuxtceafs.cloudfront.net/increase traffic.jpg' title="The Best 4 Types Of Business Strategies For Small Business" 
                     date="MARCH 10, 2023" background="#FFF3CA" reverse={false}/>
-                <Article image={increasetraffic} title="Learn How To Increase Traffic To Your Website Organically"
+                <Article image='https://d1w0kjuxtceafs.cloudfront.net/increase traffic.jpg' title="Learn How To Increase Traffic To Your Website Organically"
                     date="MARCH 11, 2023" background="#E9F7FF" reverse={true}/>
                 <div className="more-articles">
                     <Link to="#">More Articles</Link>
