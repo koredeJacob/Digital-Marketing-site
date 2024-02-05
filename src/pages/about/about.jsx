@@ -109,7 +109,7 @@ function AboutUs(){
             <div className="aboutus-team">
                 <Header spantext=" O3 . OUR TEAM" image={handshake} content="Our team of expert marketers" light={false}/>
                 <div className="aboutus-team-container">
-                    <TeamCard name="Vincie Vincent" role="Lead Manager" picture='/https://d1w0kjuxtceafs.cloudfront.net/person1.jpg'/>
+                    <TeamCard name="Vincie Vincent" role="Lead Manager" picture='https://d1w0kjuxtceafs.cloudfront.net/person1.jpg'/>
                     <TeamCard name="Richard Walsh" role="Co-Founder" picture='https://d1w0kjuxtceafs.cloudfront.net/person2.jpg'/>
                     <TeamCard name="Elspeth Clarkson" role="Creative Director" picture='https://d1w0kjuxtceafs.cloudfront.net/person3.jpg'/>
                 </div>

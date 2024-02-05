@@ -90,7 +90,7 @@ function Home(){
                         </div>
                     </div>
                     <div className="banner-image">
-                        <img src='https://d1w0kjuxtceafs.cloudfront.net/Patter (3).png' className="monitor" alt="monitor photo"/>
+                        <img src='https://d1w0kjuxtceafs.cloudfront.net/Pattern (3).png' className="monitor" alt="monitor photo"/>
                         <img src={check} className="check" alt="check mark"/>
                         <img src={bullseye} className="bullseye" alt="bullseye"/>
                         <img src={star} className="star" alt="star icon"/>
